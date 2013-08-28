@@ -19,6 +19,8 @@
 		<a class="btn btn-primary btn-large" href="http://www.google.si">Začni</a>
 		</p>
 	</div>
+	
+	
  <script src="http://code.jquery.com/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
 </body>
