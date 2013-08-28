@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <title>Python - spletno učenje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/oblika.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div class="page-header">
+    <h1>Example page header <small>Subtext for header</small></h1>
+    </div>
+	
+	<div class="hero-unit">
+		<h1>Python</h1>
+		<p>Spletna aplikacija za učenje osnov programskega jezika Python</p>
+		<p>
+		<a class="btn btn-primary btn-large" href="http://www.google.si">Začni</a>
+		</p>
+	</div>
+ <script src="http://code.jquery.com/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
