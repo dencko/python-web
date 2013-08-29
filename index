@@ -2,24 +2,35 @@
 <html lang="sl">
 <head>
   <meta charset="utf-8">
-  <title>Python - spletno učenje</title>
+  <title>Spletna vadnica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/oblika.css" rel="stylesheet" media="screen">
 </head>
 <body>
 	<div class="page-header">
-    <h1>Python - spletna vadnica <small>Aplikacija za začetnike</small></h1>
-    </div>
-	
+		<blockquote id="glava"><p class="text-center">Prepričan sem, da je študentom Python veliko lažji za učenje programiranja, kot so C, C++ ali Java hkrati. Vse podrobnosti teh jezikov so veliko težje za razumevanje. Ostali skriptni jeziki se pri tem tudi ne obnesejo dobro.</p></blockquote>
+		<p class="text-right" id="guido">- Guido van Rossum</p>
+	</div>
 	<div class="hero-unit">
-		<h1>Python</h1>
-		<p>Spletna aplikacija za učenje osnov programskega jezika Python</p>
+		<h1>Spletna vadnica</h1>
+		<p>Aplikacija za učenje osnov programskega jezika Python</p>
 		<p>
-		<a class="btn btn-primary btn-large" href="http://www.google.si">Začni</a>
+		<a class="btn btn-primary btn-large" href="uvod.html">Začni</a>
 		</p>
 	</div>
 	
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+			  <p>Vsebina, povezave...</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="navbar navbar-fixed-bottom">
+		<p>Izdelano:2013</p>
+	</div>
 	
  <script src="http://code.jquery.com/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
