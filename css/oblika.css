@@ -1,15 +1,16 @@
 body {
-  background-color:#407cab;
-  background-image:url('../img/type.png');
+  background-image:url('../img/grunge_wall.png');
 }
 
+/** Naslovna stran **/
+
 #glava {
-  color:white;
+  color:black;
   margin-left:10px;	
 }
 
 #guido {
-  color:white;
+  color:blue;
   margin-right:40px;	
 }
 
@@ -22,17 +23,20 @@ body {
   background-position:right center, left;
   }
   
-.container {
-  background-color:white;
-  border:1px solid #f7d24f;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+#leva {
+  border-top:1px solid black;
+  border-bottom:1px solid black;
 }
 
 .navbar-fixed-bottom {
   height:50px;
-  background-color:white;
-  border-top:1px solid #f7d24f;
   text-align:center;
+}
+
+/** Vadnica **/
+
+#header-vadnica {
+  margin-left:10px;
+  margin-right:10px;
+  border-bottom:1px solid black;
 }
