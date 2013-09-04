@@ -33,6 +33,11 @@ body {
   text-align:center;
 }
 
+#yourcode {
+  font-family:"Courier New";
+  width:445px;
+}
+
 /** Vadnica **/
 
 #header-vadnica {
