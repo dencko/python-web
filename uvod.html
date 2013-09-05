@@ -61,29 +61,41 @@
                 eval(Sk.importMainWithBody("<stdin>",false,prog));
                   }
                     catch(err) {
-                txt="Ups! Prišlo je do napake v sintaksi.\n\n";
-                txt+="Opis napake | " + err + "\n\n";
-                txt+="Klikni OK za nadaljevanje in popravi.\n\n";
-                alert(txt);
+                $(".modal").modal("show");
+                var y=document.getElementById("napaka");
+                y.innerHTML=err;
                   }
 			    }
               </script>
               
 <h3>Python koda:</h3>
 <form>
-<textarea class="lined" id="yourcode" cols="60" rows="10">
+<textarea id="yourcode" cols="60" rows="10">
 </textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>
               
               <pre charset="utf-8" id="output" ></pre>
-                
+              
 		 </div>
 	   </div>
      </div>
-
-    
- <script src="http://code.jquery.com/jquery.js"></script>
+     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-header" id="glava-napaka">
+     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+     <h3 id="myModalLabel">Pozor, napaka!</h3>
+     </div>
+     <div class="modal-body">
+     <p id="napaka"></p>
+     <p>Popravite kodo in poizkusite znova.</p>
+     </div>
+     <div class="modal-footer">
+     <button class="btn" data-dismiss="modal" aria-hidden="true">Popravi kodo</button>
+     </div>
+     </div>
+     
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
  <script src="js/bootstrap.min.js"></script>
  <script src="js/skulpt.js" type="text/javascript"></script>
  <script src="js/builtin.js" type="text/javascript"></script>

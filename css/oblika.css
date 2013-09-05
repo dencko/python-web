@@ -45,3 +45,15 @@ body {
   margin-right:10px;
   border-bottom:1px solid black;
 }
+
+/** Oblika za modal **/
+
+#glava-napaka {
+  color:#8B0000;
+}
+
+#napaka {
+  color:#ff0000;
+}
+
+
