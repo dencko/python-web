@@ -35,6 +35,7 @@ body {
 
 #yourcode {
   font-family:"Courier New";
+  color:#000;
   width:445px;
 }
 
@@ -52,8 +53,15 @@ body {
   color:#8B0000;
 }
 
+#okno-telo-napaka {
+  background-color:#ffe6e6;
+  border-top:1px solid red;
+  border-bottom:1px solid red;
+}
+
 #napaka {
   color:#ff0000;
+  text-decoration:underline;
 }
 
 
