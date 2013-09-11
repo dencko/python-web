@@ -14,7 +14,7 @@
 	
 	<div class="page-header" id="header-vadnica">
       <div class="progress">
-        <div class="bar" style="width: 10%;">
+        <div class="bar" style="width: 25%;">
         </div>
       </div>
 	</div>
@@ -31,24 +31,32 @@
               <li><a href="uvod.html">Pozdravljen svet!</a></li>
               <li class="nav-header">Osnovne operacije</li>
               <li><a href="operacije.html">Računanje</a></li>
-              <li class="active"><a href="#">Ostanek pri deljenju</a></li>
+              <li><a href="modulus.html">Ostanek pri deljenju</a></li>
               <li><a href="operacije2.html">Ostale operacije</a></li>
               <li class="nav-header">Spremenljivke</li>
               <li><a href="imena_spremenljivk.html">Imena spremenljivk</a></li>
-              <li><a href="stevila_nizi.html">Števila in nizi znakov</a></li>
+              <li class="active"><a href="#">Števila in nizi znakov</a></li>
               <li><a href="spreminjanje.html">Spreminjanje spremenljivk</a></li>
               <li><a href="spreminjanje_podatkov.html">Spreminjanje vrste podatkov</a></li>
               <li class="nav-header">Odločitve</li>
             </ul>
          </div>
 	     <div class="span6">
-			<h3>Ostanek pri deljenju</h3>
-	        <p>Pri deljenju dveh celih števil ste lahko opazili, da Python tudi rezultat prikaže kot celo število. Če delite 7 in 2, Python
-	        rezultat zaokroži na prvo celo število, ki je v tem primeru 3. Kaj pa ostanek pri deljenju? Za to ima Pytohn poseben operator, ki se mu reče modulus.
-	        Zapiše se ga z znakom <code>%</code>. Poizkusite deliti 7 in 2 s pomočjo znaka <code>%</code> in videli boste, kaj se zgodi. V tem primeru vam vrne celo število, 
-	        ki je ostanek pri deljenju. Za točen rezultat pri deljenju dveh števil morate vsaj eno število pisati z decimalno piko. Poizkusite napisati v polje za kodo <code>print 7.0 / 2</code>
-	        in videli boste rezultat. Lahko se igrate s poljubnimi števili.</br>
-	        <strong>Obnašanje Python-a pri deljenju števil si morate zapomniti, saj je ponavadi ravno neupoštevanje pravil vzrok za pojav hroščev v programski kodi!</strong>
+			<h3>Števila in nizi znakov</h3>
+	        <p>Znak ali vrsta znakov (črke, številke, ločila) se imenujejo <strong>niz (string)</strong>. Python-u povemo, da delamo niz na način, da znake zapišete v navednicah. 
+	        Uporabite lahko enojne ali dvojne navednice. Oboje bo enako delovalo, paziti morate le, da na začetku in na koncu niza vtipkate enake navednice! Če vpišete številko brez navednic, bo Python to razumel kot numerično vrednost in ne znak.
+	        Primer iz prejšnje vaje lahko poizkusite pognati tako, da vrednosti spremenljivk <strong>prvo</strong> in <strong>drugo</strong> daste v navednice (Python-u na ta način poveste, da hočete število imeti zapisano kot znak!). Poženite in poglejte, kaj se zgodi.
+	        Poizkusite na podoben način pognati še naslednjo kodo:</br>
+	        <pre>a = "Mojca"
+b = "Pokrajculja"
+print a + b
+</pre></br>
+	        Kaj pa tole:</br>
+<pre>a = "Mojca"
+b = 3
+print a * b
+</pre></br>
+	        Nize znakov lahko med seboj združujemo. Lahko jih tudi večkrat izpišemo, kot smo videli v drugem primeru.
 	        </p>
 			  <script type="text/javascript">
                 
@@ -117,5 +125,7 @@
  
 </body>
 </html>
+
+
 
 

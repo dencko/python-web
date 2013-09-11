@@ -14,7 +14,7 @@
 	
 	<div class="page-header" id="header-vadnica">
       <div class="progress">
-        <div class="bar" style="width: 10%;">
+        <div class="bar" style="width: 35%;">
         </div>
       </div>
 	</div>
@@ -31,24 +31,35 @@
               <li><a href="uvod.html">Pozdravljen svet!</a></li>
               <li class="nav-header">Osnovne operacije</li>
               <li><a href="operacije.html">Računanje</a></li>
-              <li class="active"><a href="#">Ostanek pri deljenju</a></li>
+              <li><a href="modulus.html">Ostanek pri deljenju</a></li>
               <li><a href="operacije2.html">Ostale operacije</a></li>
               <li class="nav-header">Spremenljivke</li>
               <li><a href="imena_spremenljivk.html">Imena spremenljivk</a></li>
               <li><a href="stevila_nizi.html">Števila in nizi znakov</a></li>
               <li><a href="spreminjanje.html">Spreminjanje spremenljivk</a></li>
-              <li><a href="spreminjanje_podatkov.html">Spreminjanje vrste podatkov</a></li>
+              <li class="active"><a href="#">Spreminjanje vrste podatkov</a></li>
               <li class="nav-header">Odločitve</li>
             </ul>
          </div>
 	     <div class="span6">
-			<h3>Ostanek pri deljenju</h3>
-	        <p>Pri deljenju dveh celih števil ste lahko opazili, da Python tudi rezultat prikaže kot celo število. Če delite 7 in 2, Python
-	        rezultat zaokroži na prvo celo število, ki je v tem primeru 3. Kaj pa ostanek pri deljenju? Za to ima Pytohn poseben operator, ki se mu reče modulus.
-	        Zapiše se ga z znakom <code>%</code>. Poizkusite deliti 7 in 2 s pomočjo znaka <code>%</code> in videli boste, kaj se zgodi. V tem primeru vam vrne celo število, 
-	        ki je ostanek pri deljenju. Za točen rezultat pri deljenju dveh števil morate vsaj eno število pisati z decimalno piko. Poizkusite napisati v polje za kodo <code>print 7.0 / 2</code>
-	        in videli boste rezultat. Lahko se igrate s poljubnimi števili.</br>
-	        <strong>Obnašanje Python-a pri deljenju števil si morate zapomniti, saj je ponavadi ravno neupoštevanje pravil vzrok za pojav hroščev v programski kodi!</strong>
+			<h3>Spreminjanje vrste podatkov</h3>
+	        <p>Videli ste, da obstajajo vsaj 3 različne stvari, ki jih lahko dodeliste spremenljivki. To so cela števila, realna števila in nizi znakov. 
+	        Obstajajo pa tudi ostali tipi podatkov. V tej vaji boste spoznali, kako iz enega tipa spremenljivke ustvarite drugega.
+	        To se imenuje <strong>sprememba tipa (type conversion)</strong>. Python v resnici ne spremeni stvari iz enega tipa v drugega. Iz originalne stvari ustvari novo stvar, 
+	        takega tipa kot sami želimo. Poglejmo 3 funkcije, ki spreminjajo tipe:</br>
+	        <ul>
+              <li><strong>float()</strong> – ustvari novo realno število iz celega števila ali niza znakov</li>
+              <li><strong>int()</strong> – ustvari novo celo število iz realnega števila ali niza znakov (odreže decimalke)</li>
+              <li><strong>str()</strong> – ustvari nov niz znakov iz števila ali katerega drugega tipa podatkov</li>
+            </ul>
+            Oklepaji na koncu teh besed so tam zato, ker so to ene izmed vgrajenih funkcij Python-a in ne njegove ključne besede (kot je naprimer beseda <code>print</code>). Vrednost, ki jo želite spreminjati, daste v oklepaje teh funkcij.
+            Primer pretvorbe (iz celega števila v realno):</br>
+<pre>a = 38
+b = float(a)
+print b
+</pre>
+            Poizkusite še pretvorbe iz realnega števila v celo število ter iz celega in realnega števila v niz znakov.</br>
+            <strong>Opomba: Niza znakov ne moreste spreminjati v števila!</strong>           
 	        </p>
 			  <script type="text/javascript">
                 
@@ -117,5 +128,9 @@
  
 </body>
 </html>
+
+
+
+
 
 
