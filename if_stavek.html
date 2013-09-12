@@ -14,7 +14,7 @@
 	
 	<div class="page-header" id="header-vadnica">
       <div class="progress">
-        <div class="bar" style="width: 30%;">
+        <div class="bar" style="width: 40%;">
         </div>
       </div>
 	</div>
@@ -36,26 +36,29 @@
               <li class="nav-header">Spremenljivke</li>
               <li><a href="imena_spremenljivk.html">Imena spremenljivk</a></li>
               <li><a href="stevila_nizi.html">Števila in nizi znakov</a></li>
-              <li class="active"><a href="#">Spreminjanje spremenljivk</a></li>
+              <li><a href="spreminjanje.html">Spreminjanje spremenljivk</a></li>
               <li><a href="spreminjanje_podatkov.html">Spreminjanje vrste podatkov</a></li>
               <li class="nav-header">Odločitve</li>
-              <li><a href="if_stavek.html">IF stavek</a></li>
+              <li class="active"><a href="#">IF stavek</a></li>
+              
             </ul>
          </div>
 	     <div class="span6">
-			<h3>Spreminjanje spremenljivk</h3>
-	        <p>Spremenljivkam lahko spremenite ali zamenjate vrednost, ki ste jim jo dodelili. V Python-u ustvarite neko novo stvar in nanjo prilepite staro ime.
-	        Prej ste ustvarili spremenljivko <code>ucitelj = "g. Novak"</code>. Vnesite jo ponovno v polje za kodo. V naslednji vrstici vnesite spremenljivko, ki
-	        ima isto ime, vendar drugačno vrednost: <code>ucitelj = "g. Smole"</code>. S pomočjo izraza <code>print </code> spremenljivko prikažite. Kaj se je zgodilo?
-	        Ustvarili ste novo stvar (g. Smole) in jo poimenovali <code>ucitelj</code>. Oznaka se je prenesla iz stare vrednosti na novo.</br>
-	        Ustvarite lahko tudi spremenljivko, ki je enaka sama sebi. To zapišete kot <code>rezultat = rezultat</code>. Tak način je nesmiseln. Če pa malce spremenite zadevo, lahko dobite
-	        povsem uporabno rešitev. Poizkusite z naslednjo kodo:</br>
-<pre>rezultat = 8
-print rezultat
-rezultat = rezultat + 1
-print rezultat
-</pre></br>
-			Kadarkoli naredite spremenljivko enako neki stvari, je spremenljivka na levi strani. Pojavi se lahko tudi na desni. To se zgodi v veliko programih, na ta način lahko <strong>povečate</strong> ali <strong>zmanjšate</strong> spremenljivko za določeno število.
+			<h3>IF stavek</h3>
+	        <p>Za sprejemanje odločitve, programi preverijo (naredijo test), ali je določen pogoj izpolnjen ali ne. 
+	        Python pozna samo nekaj načinov za testiranje, za vsak test pa sta samo dva možna odgovora: <strong>true</strong> ali <strong>false</strong>.</br>
+	        Python uporablja ključno besedo <code>if</code> za testiranje pogojev.</br>
+	        Pri tem poglavju se boste tudi prvič srečali s posebnostjo, ki je značilna za Python. To je uporaba <strong>zamika (indentation)</strong>.
+	        Zamik Python-u pove, kje se blok kode začne in kje konča. Nekateri stavki, kot je naprimer if stavek, potrebujejo blok kode, da jim pove, kaj naj naredijo.
+	        V veljavi je nekakšno pravilo (convention) za Python, da se koda zamika s <strong>štirikratnim presledkom!</strong></br>
+	        Preizkusite sledeči if stavek:</br>
+<pre>starost = 12
+if starost >= 8:
+    print "Prava kategorija."
+else:
+    print "Neprava kategorija."
+</pre></br>	    
+		    Poizkusite spremeniti starost in namesto 12 napisati 7. Videli boste, kaj se zgodi v tem primeru. Tako delujejo if stavki. 
 	        </p>
 			  <script type="text/javascript">
                 
@@ -124,6 +127,8 @@ print rezultat
  
 </body>
 </html>
+
+
 
 
 
