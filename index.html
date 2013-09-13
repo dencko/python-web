@@ -10,7 +10,14 @@
   <link href="css/oblika.css" rel="stylesheet" media="screen">
 </head>
 <body>
-	
+	<div id="fb-root"></div>
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 	
 	<div class="page-header">
 		<blockquote id="glava"><p class="text-center">Prepričan sem, da je študentom Python veliko lažji za učenje programiranja, kot so C, C++ ali Java hkrati. Vse podrobnosti teh jezikov so veliko težje za razumevanje. Ostali skriptni jeziki se pri tem tudi ne obnesejo dobro.</p></blockquote>
@@ -30,6 +37,7 @@
 			  <p>Vsebina, povezave...</p>
 			</div>
 			<div class="span4" id="desna">
+				<div class="fb-like-box" data-href="http://www.facebook.com/pythonslovenija" data-width="292" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
 			</div>
 		</div>
 	</div>
