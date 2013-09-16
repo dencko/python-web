@@ -64,4 +64,7 @@ body {
   text-decoration:underline;
 }
 
-
+.nav-list {
+  height:600px;
+  overflow:auto;
+}
