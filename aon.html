@@ -76,7 +76,37 @@
          </div>
 	     <div class="span6">
 			<h3>AND, OR in NOT</h3>
-	        <p>
+	        <p>Pogoje lahko združujemo na več načinov. Najpogostejši je ta, da uporabite ključne besede <code>and</code>, <code>or</code> in <code>not</code> ali pa kombinacije le teh.
+	        Ključna beseda <code>and</code> pomeni, da morata biti oba pogoja <strong>true</strong>, če hočete, da se sledeči blok izvrši naprej. Lahko združite tudi več kot dva pogoja.</br>
+	        Ključna beseda <code>or</code> je tudi namenjena združevanju pogojev. Če uporabite besedo <code>or</code>, se sledeči blok izvrši, če je katerikoli od pogojev <strong>true</strong>.</br>
+	        Primeri:</br>
+	        <ul>
+	          <li>AND</li>
+<pre>starost = 12
+razred = 6
+if starost >= 8 and razred >= 3:
+    print "Lahko zapustite sobo."
+else:
+    print "Ne smete zapustiti sobe."
+</pre>
+Poizkusite spreminjati števila pri starosti in razredu, da boste lažje videli, kaj se dogaja.</br></br>
+	          <li>OR</li>
+<pre>barva = "rumena"
+if barva == "rjava" or barva == "modra" or barva == "zelena":
+     print "Zmagali ste."
+else:
+    print "Izgubili ste." 
+</pre>
+Poizkusite namesto "rumena" vpisati eno od barv, ki so navedene v <code>if</code> stavku.</br></br>	          
+	          <li>NOT</li>
+<pre>starost = 12
+if not starost < 8:
+    print "Lahko zapustite sobo."
+else:
+    print "Ne smete zapustiti sobe."
+</pre>
+Poizkusite spreminjati starost, da boste lažje videli, kaj se dogaja.</br></br>	          
+	        </ul>
 	        </p>
 			  <script type="text/javascript">
                 

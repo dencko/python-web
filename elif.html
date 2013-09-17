@@ -76,7 +76,15 @@
          </div>
 	     <div class="span6">
 			<h3>ELIF stavek</h3>
-	        <p>
+	        <p>o preizkušanju prejšnjega programa smo videli, kaj Python naredi, če je pogoj <strong>true</strong>.  Kaj pa, če je pogoj <strong>false</strong>? 
+	        V Python-u obstajajo tri možnosti. Lahko naredite še en test. Če prvi test pride false, povemo Python-u naj testira nekaj drugega s pomočjo ključne besede 
+	        <code>elif</code> (kratka verzija za else if). Drugič, lahko naredite nekaj drugega, če vsi ostali testi pridejo false. To naredite s ključno besedo <code>else</code>. 
+	        Ta beseda pride vedno na konec, ko ste že uporabili if in elif stavke. Tretjič, če za blokom if stavka ne dodate ničesar, gre program naprej do naslednje vrstice kode (če ta obstaja) 
+	        ali pa se ustavi (če kode ni). Poglejmo si na prejšnjem primeru, kako lahko s pomočjo <code>elif</code> naredite še en test. Za blok <code>if</code> vrinete naslednjo vrstico:</br>
+<pre>elif starost == 8:
+    print "Si na meji!"
+</pre></br> 
+            Poizkusite namesto 12 spremeniti starost na 8. Lahko se igrate s poljubnimi celimi števili. Operator <code>==</code> preveri, ali sta dve stvari enaki. 
 	        </p>
 			  <script type="text/javascript">
                 
@@ -112,6 +120,11 @@
 <h3>Python koda:</h3>
 <form>
 <textarea id="yourcode" cols="60" rows="10">
+starost = 12
+if starost > 8:
+    print "Prava kategorija."
+else:
+    print "Neprava kategorija."
 </textarea></textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>
