@@ -76,7 +76,14 @@
          </div>
 	     <div class="span6">
 			<h3>Rezanje seznama</h3>
-	        <p>
+	        <p>Indekse lahko uporabite tudi za hkratno pridobivanje več kot ene postavke iz seznama. Temu rečemo <strong>rezanje</strong> seznama.
+	        Kar dobite vrnjeno pri rezanju seznama je običajno drug (manjši) seznam. Manjšemu seznamu pravimo tudi rezina originalnega seznama. Originalni seznam pri rezanju ostane nespremenjen. 
+	        Rezina je delna kopija originala. Razliko lahko vidite, če primerjate pridobivanje postavke in rezanje seznama. Poizkusite z ukazoma <code>print crke[1]</code> in <code>print crke[1:2]</code>.
+	        Poglejte razliko v izpisu. V prvem primeru ste dobili nazaj postavko. V drugem primeru ste dobili nazaj seznam, ki vsebuje postavko. Razlika je subtilna, vendar jo morate poznati. 
+	        V prvem primeru ste uporabili en sam indeks za pridobitev postavke iz seznama. V drugem primeru ste uporabili zapis za rezanje, da ste iz seznama pridobili rezino z eno postavko.</br>
+	        Pri rezanju seznama obstajajo tudi bližnjice. Če želite, da rezina vključuje začetek seznama, je bližnjica za to uporaba dvopičja, ki mu sledi število postavk, ki jih želite. 
+	        To storite z ukazom <code>print crke[:2]</code>. Ta ukaz ustvari rezino od začetka seznam do določenega indeksa (indeks v seznam <strong>NI</strong> vključen!). Preverite še, kaj naredita ukaza <code>print crke[2:]</code> 
+	        in <code>print [:]</code>. Prvi ustvari rezino od določenega indeksa do konca seznama, drugi pa ustvari kopijo seznama (uporabno, če želite kaj spremeniti v seznamu in pri tem pustiti originalen seznam nedotaknjen). 
 	        </p>
 			  <script type="text/javascript">
                 
@@ -112,6 +119,7 @@
 <h3>Python koda:</h3>
 <form>
 <textarea id="yourcode" cols="60" rows="10">
+crke = ['a', 'b', 'c', 'd', 'e']
 </textarea></textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>
