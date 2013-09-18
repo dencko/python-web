@@ -64,7 +64,14 @@ body {
   text-decoration:underline;
 }
 
+/** Navigacija **/
+
 .nav-list {
   height:600px;
   overflow:auto;
+}
+
+.nav-header {
+  font-size:1em;
+  color:grey;
 }
