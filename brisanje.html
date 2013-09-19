@@ -76,7 +76,10 @@
          </div>
 	     <div class="span6">
 			<h3>Brisanje iz seznama</h3>
-	        <p>
+	        <p>Stvari lahko iz seznama izbrišete na 3 načine, in sicer s pomočjo metod <strong>remove()</strong>, <strong>pop()</strong> in ključne besede <strong>del</strong>.</br>
+	        Metoda <strong>remove()</strong> zbriše postavko, ki si jo izberete na seznamu ter jo vrže stran. Primer: <code>crke.remove('e')</code> Vedeti morate samo to, ali postavka obstaja ali ne obstaja na seznamu. Če želite zbrisati nekaj, kar ni na seznamu, vam javi napako. Preizkusite metodo in nato izpišite seznam s pomočjo ključne besede <code>print</code></br>
+            Metoda <strong>pop()</strong> pobere zadnjo postavko iz seznama in vam jo vrne. To pomeni, da jo lahko date v spremenljivko (ji dodelite ime). Primer: <code>zadnja_crka = crke.pop()</code>. V oklepaj te metode lahko napišemo številko, ki pomeni indeks postavke. Primer: <code>nova_crka = crke.pop(1)</code> odstrani postavko z indeksom 1 (v našem primeru črko b). Preizkusite metodo in nato s pomočjo ključne besede <code>print</code> prikažite seznam in spremenljivki <code>zadnja_crka</code> in <code>nova_crka</code>.</br>
+            Ključna beseda <strong>del</strong> nam zbriše postavko iz seznama z uporabo indeksa postavke. Primer: <code>del crke[2]</code> zbriše črko c iz seznama. Preizkusite in nato prikažite seznam s pomočjo ključne besede <code>print</code>.  
 	        </p>
 			  <script type="text/javascript">
                 
@@ -112,6 +115,7 @@
 <h3>Python koda:</h3>
 <form>
 <textarea id="yourcode" cols="60" rows="10">
+crke = ['a', 'b', 'c', 'd', 'e']
 </textarea></textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>

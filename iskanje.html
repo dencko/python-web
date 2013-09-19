@@ -76,7 +76,17 @@
          </div>
 	     <div class="span6">
 			<h3>Iskanje po seznamu</h3>
-	        <p>
+	        <p>Če želite ugotoviti, ali je nekaj v seznamu, uporabite ključno besedo <code>in</code>. Primer (preizkusite spodaj):
+<pre>if 'a' in crke:
+    print "V seznamu obstaja a"
+else:
+    print "V seznamu ne obstaja a"
+</pre>Stavek <code>'a' in crke</code> je Boolova algebra (v računalništvu srečate izraz <strong>Boolean</strong>) ali logični izraz. Vrne vrednost <strong>True</strong>, če je črka a v seznamu in vrednost <strong>False</strong>, če črke a v seznamu ni.</br>
+            Lahko se igrate in kombinirate <code>in</code> ter <code>remove()</code>. Primer:
+<pre>if 'a' in crke:
+    crke.remove('a')
+</pre>         
+             Ta koda samo odstrani vrednost iz seznama, če jo seznam seveda vsebuje. V kolikor jo ne, ne naredi nič. Za vrstico <code>crke.remove('a')</code> prikažite seznam s pomočjo besede <code>print</code>. 
 	        </p>
 			  <script type="text/javascript">
                 
@@ -112,6 +122,7 @@
 <h3>Python koda:</h3>
 <form>
 <textarea id="yourcode" cols="60" rows="10">
+crke = ['a', 'b', 'c', 'd', 'e']
 </textarea></textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>
