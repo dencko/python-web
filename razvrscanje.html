@@ -76,7 +76,29 @@
          </div>
 	     <div class="span6">
 			<h3>Razvrščanje seznama</h3>
-	        <p>
+	        <p>Seznami so urejen tip zbirke. To pomeni, da imajo postavke v seznamu nek red in vsaka izmed njih ima določeno lokacijo v seznamu – indeks. Ko enkrat date postavke v seznam v nekem določenem redu, tako tudi ostane. 
+	        Mogoče želite razvrščen seznam, preden ga uporabite. Za razvrščanje seznama uporabite metodo <code>sort()</code>.
+	        Metoda <code>sort()</code> avtomatsko razvrsti nize znakov po abecednem vrstnem redu in števila po velikosti – od najmanjšega proti največjemu. Pomembno je vedeti, da metoda <code>sort()</code> spreminja seznam na licu mesta. To pomeni, da spremeni originalen seznam in ne ustvari novega, razvrščenega seznama. V tem primeru ne morete zapisati <code>print crke.sort()</code>, ampak to naredite tako:
+<pre>crke = ['d', 'a', 'e', 'c', 'b']
+crke.sort()
+print crke
+</pre>
+	        Sezname lahko razvrščate tudi v obratnem vrstnem redu. Ta lahko naredite na dva načina. En je ta, da razvrstite seznam in ga nato obrnete s pomočjo metode <code>reverse()</code>, ki obrne vrstni red postavk na seznamu. Primer:
+<pre>crke = ['d', 'a', 'e', 'c', 'b']
+crke.sort()
+print crke
+crke.reverse()
+print crke
+</pre>      
+            Drugi način je ta, da metodi <code>sort()</code> podate parameter za padajoče razvrščanje in dobite to: <code>crke.sort(reverse = True)</code>. Preizkusite tudi ta način.</br>
+            Do sedaj je vsako razvrščanje in obračanje vrstnega reda spremenilo originalen seznam. To pomeni, da je vaš originalen vrstni red izgubljen. Če hočete ohraniti originalni vrstni red in razvrstiti kopijo seznama, lahko uporabite <code>[:]</code> - <strong>zapis za razrez (slice notation)</strong>. Preizkusite tudi to (naredite kopijo seznama, jo shranite v novo spremenljivko in jo razvrstite. S pomočjo ključne besede <code>print</code> vse spremenljivke prikažite).</br>
+            Za konec pa še sladica. Obstaja tudi način za pridobivanje razvrščene kopije seznama brez spreminjanja originalnega seznama. Python ima za ta namen vgrajeno funkcijo, ki se imenuje <code>sorted()</code>. Primer:
+<pre>crke = ['d', 'a', 'e', 'c', 'b']
+nov = sorted(crke)
+print crke
+print nov
+</pre>  
+            Funkcija <code>sorted()</code> nam da razvrščeno kopijo originalnega seznama. 
 	        </p>
 			  <script type="text/javascript">
                 
@@ -112,6 +134,7 @@
 <h3>Python koda:</h3>
 <form>
 <textarea id="yourcode" cols="60" rows="10">
+crke = ['d', 'a', 'e', 'c', 'b']
 </textarea></textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>

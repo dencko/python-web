@@ -76,7 +76,22 @@
          </div>
 	     <div class="span6">
 			<h3>Seznami seznamov - tabele</h3>
-	        <p>
+	        <p>Za konec poglavja o seznamih si poglejmo en praktičen primer. Pretipkajte ga v okno za Python kodo in kliknite gumb Poženi.
+<pre>ocene_Jure = [5, 5, 4, 3]
+ocene_Marko = [2, 4, 3, 4]
+ocene_Tine = [2, 1, 4, 5]
+
+ocene_Razreda = [ocene_Jure, ocene_Marko, ocene_Tine]
+
+for ocene_Ucencev in ocene_Razreda:
+    print ocene_Ucencev
+
+print    
+print ocene_Razreda[0]
+print ocene_Razreda[0][2]
+</pre>
+            Naredili smo seznam ocen za posamezne učence, ga shranili v seznam za celoten razred in ga s pomočjo zanke prikazali kot tabelo. Vrstica <code>print ocene_Razreda[0]</code> prikaže prvo postavko na seznamu ocen razreda (Juretove ocene).
+            Vrstica <code>print ocene_Razreda[0][2]</code> prikaže prvo postavko seznama celotnega razreda in tretjo postavko (indeks 2!) v tem seznamu (v našem primeru Juretove ocene). Zanke boste podrobno spoznali v naslednjih vajah.  
 	        </p>
 			  <script type="text/javascript">
                 
