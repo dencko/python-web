@@ -76,7 +76,23 @@
          </div>
 	     <div class="span6">
 			<h3>Števna zanka</h3>
-	        <p>
+	        <p>Računalniki so zelo dobri, ko gre za ponavljanje stvari. Programi pogosto ponavljajo stvari vedno znova. Temu se reče <strong>zankanje</strong> ali <strong>looping</strong>. 
+	        <strong>Števne zanke</strong> ali <strong>for zanke</strong> imajo točno določeno število ponavljanj. Primer enostavne števne zanke:
+<pre>for i in [1, 2, 3, 4, 5]:
+    print "Pozdravljen!"
+</pre>
+            Prva vrstica naše kode <code>for i in [1, 2, 3, 4, 5]:</code> pomeni, da i začne z vrednostjo 1. Zanka bo nato enkrat naredila vse, kar je v bloku navodil za vsako vrednost v seznamu - list (seznam je označen z oglatima oklepajema). Vsakič, ko gre skozi zanko, se spremenljivki i dodeli naslednja vrednost v seznamu.
+            Druga vrstica <code>print "Pozdravljen!"</code> je blok kode, ki jo Python izvrši vsakič, ko gre zanka mimo. For zanka potrebuje blok kode, ki programu pove, kaj naj naredi v vsaki zanki. Blok oziroma zamaknjeni del kode se imenuje <strong>telo zanke (body of the loop)</strong>.
+            Vsak prehod skozi zanko se imenuje <strong>ponavljanje</strong> ali <strong>iteracija (iteration)</strong>. Namesto, da vam program vsakič prikaže isto stvar, mu lahko podate ukaz, naj skozi zanko vsakič prikaže nekaj drugega. Primer:
+<pre>for i in [1, 2, 3, 4, 5]:
+    print i
+</pre>
+            Tokrat je program prikazal vrednost spremenljivke <strong>i</strong>. Pri vsakem prehodu skozi zanko, je <strong>i</strong> izbrala naslednjo vrednost na seznamu. Poglejte si še uporaben primer števne zanke - tabelo večkratnikov določenega števila:
+<pre>for i in [1, 2, 3, 4, 5]:
+    print i, "x 8 = ", i * 8
+</pre>
+            Sedaj končno lahko vidite pravo moč zank. Prej bi za tak izpis morali vsako <code>print</code> vrstico pisati posebej. Za daljšo tabelo večkratnikov določenega števila bi morali pisati več print vrstic. Če uporabite zanko, pa samo dodate števila v seznam.
+            Po želji se lahko igrate in v zanko dodajate števila po lastni izbiri.
 	        </p>
 			  <script type="text/javascript">
                 

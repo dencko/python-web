@@ -77,7 +77,15 @@
          </div>
 	     <div class="span6">
 			<h3>Funkcija range()</h3>
-	        <p>
+	        <p>V prejšnjem primeru ste zankali samo petkrat. Kaj bi se zgodilo, če bi mogli zankat naprimer stokrat ali celo tisočkrat? Na srečo obstaja bližnjica za to. Funkcija <strong>range()</strong> vam dovoli zapis začetne in končne vrednosti, vse vmesne pa določi sama. Funkcija <strong>range()</strong> ustvari seznam, ki vsebuje določen razpon številk. Primer (preizkusite):
+<pre>for i in range(1, 5):
+    print i, "x 8 = ", i * 8
+</pre>	     
+            Izpis je skoraj identičen prejšnjemu, le izpis zadnje zanke mu manjka. Funkcija <strong>range()</strong> deluje tako, da ustvari seznam od prve podane vrednosti oziroma številke do ene številke pred navedeno končno vrednostjo. To morate vzeti v zakup in upoštevati pri določanju razpona, da dobite želeno število zank. Program za izpis desetih večkratnikov števila 8 bi bil tak:
+<pre>for i in range(1, 11):
+    print i, "x 8 = ", i * 8
+</pre>       
+            V našem primeru smo spremenljivko zanke poimenovali <strong>i</strong>, lahko pa ji date poljubno ime! Obstaja <strong>konvencija (skupna praksa ali pravilo)</strong> v programiranju, ki določa uporabo črk i, j, k ,… za spremenljivke zanke. Ker velika večina to uporablja, se programerji navadijo na to, da te stvari srečujejo v programih. Popolnoma pravilna pa je tudi uporaba ostalih imen.</br> <strong>Črk i, j, k ne uporabljamo za nič drugega kot samo spremenljivke zank!</strong>     
 	        </p>
 			  <script type="text/javascript">
                 

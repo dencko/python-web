@@ -76,7 +76,18 @@
          </div>
 	     <div class="span6">
 			<h3>Pogojna zanka</h3>
-	        <p>
+	        <p>For zanka  je dobra v primeru, ko vnaprej veste, koliko časa boste zanko poganjali. Včasih pa želite, da se zanka izvaja le toliko časa, dokler se nekaj ne zgodi. Ne veste pa, koliko ponavljanj bo do takrat potrebnih. To vam omogoči <strong>while zanka</strong> ali <strong>pogojna zanka (conditional loop)</strong>.
+	        Namesto da šteje, kolikokrat se zanka ponovi, <strong>while zanka</strong> uporabi test za odločitev, kdaj se bo zanka ustavila. While zanka ali pogojna zanka toliko časa zanka, dokler je pogoj izpolnjen. Zanka toliko časa, dokler je pogoj <strong>true</strong>. While zanka uporablja Python-ovo ključno besedo <code>while</code>.</br>
+	        <strong>Ker je v interaktivnem načinu spletne vadnice težko prikazati uporabo while zanke (zahteva uporabnikov vnos), vam podam kodo, ki jo lahko preizkusite, ko namestite Python na svojem računalniku.</strong></br> Primer:
+<pre>print "Vtipkaj 3 za nadaljevanje, karkoli drugega za izhod!"
+vnos = raw_input()
+while vnos == '3':
+    print "Hvala za 3, zelo si prijazen."
+    print "Vtipkaj 3 za nadaljevanje, karkoli drugega za izhod."
+    vnos = raw_input()
+print "To ni 3, konec programa."
+</pre>  
+            
 	        </p>
 			  <script type="text/javascript">
                 

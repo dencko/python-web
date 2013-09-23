@@ -76,7 +76,17 @@
          </div>
 	     <div class="span6">
 			<h3>Štetje po korakih</h3>
-	        <p>
+	        <p>Do zdaj so vse zanke štele po 1. Kaj pa če žalite, da zanka šteje v korakih po 2, 5 ali 10? Kaj pa štetje po nazaj? Funkcija <strong>range()</strong> lahko vsebuje dodaten argument, ki vam dovoli spremembo koraka na poljubno vrednost namesto privzete, ki je nastavljena na 1. 
+	        Argumenti so vrednosti, ki jih pišemte v oklepaje funkcij, kot je naprimer funkcija <strong>range()</strong>. Temu se reče, da podate argument funkciji. Uporablja se tudi beseda <strong>parameter</strong> (podamo parameter funkciji).
+            V interaktivnem načinu preizkusite nekaj zank.</br> Prvi primer (dodate tretji parameter funkciji <strong>range()</strong> – sedaj program šteje v koraku po 2):
+<pre>for i in range(1, 10, 2):
+    print i
+</pre>   
+            Poizkusite šteti v koraku po 3 (spremenite tretji parameter na 3). Kaj pa štetje po nazaj? To se zgodi, ko je tretji parameter v funkciji <strong>range()</strong> negativen. Zanka se začne pri prvi številki, druge številke pa ne vključi, ker se prej ustavi. Primer:
+<pre>for i in range(10, 1, -1):
+    print i
+</pre>            
+            V zadnjem primeru se ustavi pri 2, ne pri 1! Če želite, da ustavi pri 1, spremenite drugi parameter na 0. Lahko se igrate s poljubnimi števili.       
 	        </p>
 			  <script type="text/javascript">
                 
