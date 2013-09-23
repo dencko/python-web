@@ -76,7 +76,20 @@
          </div>
 	     <div class="span6">
 			<h3>Metode za nize znakov</h3>
-	        <p>
+	        <p>V Python-u obstajajo zanimive metode za spreminjanje niza znakov. Prva taka metoda je ta, da lahko niz znakov, ki je sestavljen iz samih majhnih tiskanih črk, prikažete z veliko začetnico. Za to se uporablja metoda <code>capitalize()</code>. Primer:
+<pre>a = "marjetica"
+print a.capitalize()
+</pre>
+            Prikaže vam besedo, ki ji spremeni prvo črko v veliko začetnico. Druga zanimiva metoda je ta, da vse znake v nizu spremeni v velike tiskane črke. To naredite s pomočjo metode <code>upper()</code>. Primer:
+<pre>a = "marjetica"
+print a.upper()
+</pre>
+            Podobno lahko naredite, če zapišete besedo "marjetica" z velikimi tiskanimi črkami ali veliko začetnico in potem uporabite metodo <code>lower()</code>. Preizkusite!
+            Še dve zanimivi metodi sta, ki odstranita morebitne presledke pred ali za nizom znakov. To sta metodi <code>lstrip()</code> in <code>rstrip()</code>. Primer:
+<pre>a = "    marjetica ima lepe cvetove"
+print a.lstrip()
+</pre>
+            N enak način odstranite presledke za nizom znakov, če ti obstajajo. V tem primeru uporabite metodo <code>rstrip()</code>. 
 	        </p>
 			  <script type="text/javascript">
                 
