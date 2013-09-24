@@ -63,7 +63,7 @@
               <li><a href="def_funkcije.html">Definiranje in klicanje funkcije</a></li>
               <li><a href="argumenti.html">Podajanje argumentov funkciji</a></li>
               <li><a href="vrednosti.html">Vračanje vrednosti</a></li>
-              <li><a href="globalne.html">Globalne spremenljivke</a></li>
+              <li><a href="globalne.html">Lokalne in globalne spremenljivke</a></li>
               <li class="nav-header">Predmeti</li>
               <li><a href="predmet.html">Ustvarjanje predmeta</a></li>
               <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
@@ -78,16 +78,14 @@
 			<h3>Pogojna zanka</h3>
 	        <p>For zanka  je dobra v primeru, ko vnaprej veste, koliko časa boste zanko poganjali. Včasih pa želite, da se zanka izvaja le toliko časa, dokler se nekaj ne zgodi. Ne veste pa, koliko ponavljanj bo do takrat potrebnih. To vam omogoči <strong>while zanka</strong> ali <strong>pogojna zanka (conditional loop)</strong>.
 	        Namesto da šteje, kolikokrat se zanka ponovi, <strong>while zanka</strong> uporabi test za odločitev, kdaj se bo zanka ustavila. While zanka ali pogojna zanka toliko časa zanka, dokler je pogoj izpolnjen. Zanka toliko časa, dokler je pogoj <strong>true</strong>. While zanka uporablja Python-ovo ključno besedo <code>while</code>.</br>
-	        <strong>Ker je v interaktivnem načinu spletne vadnice težko prikazati uporabo while zanke (zahteva uporabnikov vnos), vam podam kodo, ki jo lahko preizkusite, ko namestite Python na svojem računalniku.</strong></br> Primer:
-<pre>print "Vtipkaj 3 za nadaljevanje, karkoli drugega za izhod!"
-vnos = raw_input()
-while vnos == '3':
-    print "Hvala za 3, zelo si prijazen."
-    print "Vtipkaj 3 za nadaljevanje, karkoli drugega za izhod."
-    vnos = raw_input()
-print "To ni 3, konec programa."
+	        Primer pogojne zanke:
+<pre>stevec = 0
+while (stevec < 9):
+   print 'Na vrsti je:', stevec
+   stevec = stevec + 1
+print "Nasvidenje!"
 </pre>  
-            
+            Nastavili ste števec na 0. To pove programu, kje naj začne zanko. Potem ste uporabili ključno besedo <code>while</code> in ustvarili nek pogoj. V našem primeru se prikazujejo števila, ki so manjša od 9. Za vsak prikaz morate spremenljivko <code>stevec</code> povečati za 1. Ko pride do 9, pogoj ni več <strong>true</strong> in program se ustavi.
 	        </p>
 			  <script type="text/javascript">
                 

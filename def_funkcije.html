@@ -63,7 +63,7 @@
               <li class="active"><a href="#">Definiranje in klicanje funkcije</a></li>
               <li><a href="argumenti.html">Podajanje argumentov funkciji</a></li>
               <li><a href="vrednosti.html">Vračanje vrednosti</a></li>
-              <li><a href="globalne.html">Globalne spremenljivke</a></li>
+              <li><a href="globalne.html">Lokalne in globalne spremenljivke</a></li>
               <li class="nav-header">Predmeti</li>
               <li><a href="predmet.html">Ustvarjanje predmeta</a></li>
               <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
@@ -76,7 +76,27 @@
          </div>
 	     <div class="span6">
 			<h3>Definiranje in klicanje funkcije</h3>
-	        <p>
+	        <p><strong>Funkcije</strong> so neke vrste zidaki s kodo, katere lahko uporabljate v nedogled. Preprosto rečeno, funkcija je samo košček kode, ki nekaj naredi. Je majhen del, ki ga lahko uporabite za gradnjo večjega programa. Koščke lahko med sabo združujete, kot da bi zlagali Lego kocke. Funkcijo ustvarite ali definirate s Python-ovo ključno besedo <code>def</code>. Nato jo uporabite ali kličete z uporabo njenega imena.
+	        Primer enostavne funkcije:
+<pre>def pokaziNaslov():
+    print "Pinko Palinko"
+    print "Cankarjeva 100"
+    print "5000 Nova Gorica"
+    print "Slovenija"
+    
+pokaziNaslov()
+</pre>
+            V prvi vrstici ste definirali funkcijo z uporabo ključne besede <code>def</code>. Nato ste podali ime funkcije, kateremu sledita oklepaja <code>()</code> in nato dvopičje <code>:</code>.
+            Dvopičje pove Python-u, da prihaja blok kode (podobno kot pri for zankah, while zankah in if stavkih). Nato sledi koda, ki predstavlja funkcijo. Funkcijo kličemo tako, da podamo njeno ime in oklepaje (v našem primeru <code>pokaziNaslov()</code>. Tukaj začne program teči. Ta vrstica požene programsko kodo, ki ste jo definirali v funkciji. 
+            Ko glavni program kliče funkcijo se zdi, kot da funkcija pomaga glavnemu programu opraviti delo. Koda znotraj bloka <code>def</code> ni del glavnega programa, zato program pri zagonu ta del preskoči in začne s prvo vrstico zunaj bloka <code>def</code>.</br>
+            To bi lahko naredili samo s pomočjo ključne besede <code>print</code>. Zakaj ste uporabili funkcijo in stvari bolj zakomplicirali? Glavni razlog, da ste uporabili funkcijo je ta, da ko jo imate enkrat definirano, jo lahko kličete neštetokrat. Če bi želeli naslov prikazati petkrat, bi v prejšnji kodi napisali tako:
+<pre>pokaziNaslov()
+pokaziNaslov()
+pokaziNaslov()
+pokaziNaslov()
+pokaziNaslov()
+</pre>      
+            Poizkusite to narediti. Pri tem se spet postavi vprašanje. Ali ne bi bilo mogoče tega narediti s pomočjo zank? Lahko bi, vendar ima funkcija še eno dobro lastnost. Vsakič, ko se požene, se lahko drugače obnaša (pri zankah to ni možno).
 	        </p>
 			  <script type="text/javascript">
                 

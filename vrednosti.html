@@ -63,7 +63,7 @@
               <li><a href="def_funkcije.html">Definiranje in klicanje funkcije</a></li>
               <li><a href="argumenti.html">Podajanje argumentov funkciji</a></li>
               <li class="active"><a href="#">Vračanje vrednosti</a></li>
-              <li><a href="globalne.html">Globalne spremenljivke</a></li>
+              <li><a href="globalne.html">Lokalne in globalne spremenljivke</a></li>
               <li class="nav-header">Predmeti</li>
               <li><a href="predmet.html">Ustvarjanje predmeta</a></li>
               <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
@@ -76,7 +76,27 @@
          </div>
 	     <div class="span6">
 			<h3>Vračanje vrednosti</h3>
-	        <p>
+	        <p>Uporabna stvar pri funkcijah je, da vam lahko tudi nekaj vrnejo. Videli ste, da lahko podajate informacije (argumente) funkcijam, funkcije pa lahko tudi pošljejo povratno informacijo tistemu, ki jih kliče. Vrednost, ki se vrne k vam iz funkcije, se imenuje <strong>rezultat</strong> ali <strong>vrnjena vrednost</strong>.
+            Če hočete, da vam funkcija vrne vrednost, uporabite Python-ovo ključno besedo <code>return</code> znotraj funkcije. Primer:
+<pre>def izracunajCeno(cena, stopnja_davka):
+    skupnaCena = cena + (cena * stopnja_davka)
+    return skupnaCena
+</pre> 
+            To bo poslalo vrednost spremenljivke <strong>skupnaCena</strong> nazaj delu programa, ki je klical funkcijo. Kam pa gre, ko se pošlje nazaj? Vrnjene vrednosti gredo nazaj h katerikoli kodi, ki je klicala funkcijo. Primer:
+<pre>koncnaCena = izracunajCeno(28, 0.22)
+</pre>
+            Funkcija <strong>izracunajCeno</strong> bo vrnila vrednost 34.16, ta vrednost pa bo dodeljena spremenljivki <strong>koncnaCena</strong>.
+            Funkcijo za vračanje vrednosti lahko uporabite kjerkoli, kjer uporabljate izraze. Lahko dodelite vrnjeno vrednost spremenljivki (kot smo ravnokar naredili), jo uporabite v drugem izrazu ali pa kar prikažete:
+<pre>print koncnaCena
+</pre>
+            Poizkusite se igrati z različnimi vrednostmi. Lahko tudi seštejete več vrnjenih vrednosti. Primer:
+<pre>def izracunajCeno(cena, stopnja_davka):
+    skupnaCena = cena + (cena * stopnja_davka)
+    return skupnaCena
+skupaj = izracunajCeno(28, 0.22) + izracunajCeno(9, 0.08)
+print "Skupna cena je ", skupaj
+</pre> 
+            Poizkusite dodati in sešteti še kakšno vrjeno vrednost, da vidite kako stvar deluje. 
 	        </p>
 			  <script type="text/javascript">
                 

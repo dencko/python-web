@@ -63,7 +63,7 @@
               <li><a href="def_funkcije.html">Definiranje in klicanje funkcije</a></li>
               <li class="active"><a href="#">Podajanje argumentov funkciji</a></li>
               <li><a href="vrednosti.html">Vračanje vrednosti</a></li>
-              <li><a href="globalne.html">Globalne spremenljivke</a></li>
+              <li><a href="globalne.html">Lokalne in globalne spremenljivke</a></li>
               <li class="nav-header">Predmeti</li>
               <li><a href="predmet.html">Ustvarjanje predmeta</a></li>
               <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
@@ -76,7 +76,31 @@
          </div>
 	     <div class="span6">
 			<h3>Podajanje argumentov funkciji</h3>
-	        <p>
+	        <p>Oklepaji pri funkciji so namenjeni podajanju argumentov (koščkov informacije) funkciji. Nekaterim argumentom pravijo tudi <strong>parametri</strong>.
+            Predstavljajte si, da lahko uporabite funkcijo za prikaz naslova za vsakega družinskega člana. Naslov je za vse enak, ime pa je vsakič drugo. Namesto da imate tako imenovano hard-coded ime Pinko Palinko v sami funkciji, lahko namesto njega ustvarite spremenljivko. Spremenljivka se nato poda funkciji, ko jo kličete. Primer:
+<pre>def prikaziNaslov(mojeIme):
+    print mojeIme
+    print 'Cankarjeva 100'
+    print '5000 Nova Gorica'
+    print 'Slovenija'
+    
+prikaziNaslov('Pinko Palinko')
+</pre>         
+            To je podoben prikaz, kot ste ga imeli v prejšnjem primeru, ko niste uporabili argumenta. Toda v tem primeru lahko naslov prikažete vsakič različno. Poizkusite kot argument podati funkciji imena Marija Palinko, Tone Palinko, Mojca Palinko. Funkcijo kličete za vsako ime posebej.</br>
+            Funkcije lahko imajo tudi več argumentov. Bolje rečeno, lahko jih imajo nešteto. Poglejmo si primer z dvema argumentoma, da boste bolje razumeli delovanje:
+<pre>def prikaziNaslov(mojeIme, hisna_stevilka):
+    print mojeIme
+    print 'Cankarjeva',
+    print hisna_stevilka
+    print '5000 Nova Gorica'
+    print 'Slovenija'
+    
+prikaziNaslov('Bojan Balon', 120)
+</pre>   
+            Kličite funkcijo še za Tineta Kroglo s hišno številko 121 in Jureta Krofa s hišno številko 122. </br>
+            Ko uporabljate več argumentov (ali parametrov), jih med sabo ločite z vejico (tako kot postavke na seznamu). Funkciji lahko podate toliko argumentov, kot želite. To je res. 
+            Če pa ima funkcija več kot 6 argumentov, bi bilo mogoče boljše stvari narediti drugače.  Argumente lahko zberete v seznamu in ga nato podate funkciji. Na ta način podate eno spremenljivko (spremenljivko seznama), 
+            ki vsebuje kopico vrednosti. Koda je tako lažja za branje in razumevanje.
 	        </p>
 			  <script type="text/javascript">
                 
