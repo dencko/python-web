@@ -76,7 +76,40 @@
          </div>
 	     <div class="span6">
 			<h3>Inicializacija predmeta</h3>
-	        <p>
+	        <p>Ko ste ustvarili predmet Kroglica, ni imel zapolnjenih lastnosti za velikost, barvo ali smer. To ste morali zapolniti za tem, ko ste ustvarili predmet. Obstaja pa način za nastavitev lastnosti predmeta, ko se ta ustvari. Temu se reče <strong>inicializacija predmeta</strong>. Ko nekaj inicializirate v programski opremi, 
+	        nekaj pripravite za uporabo tako, da tisto stvar spravite v stanje, ki ga želite. Ko ustvarite definicijo razreda, lahko definirate posebno metodo, ki se imenuje <strong>__init__()</strong> in se bo pognala vedno, ko se bo ustvarila nova instanca razreda. Metodi lahko podate argumente, da ustvarite instance z lastnostmi, ki jih sami poljubno določite. Primer:
+<pre>class Kroglica:           
+    
+    def __init__(self, smer, barva, velikost):
+        self.smer = smer
+        self.barva = barva
+        self.velikost = velikost
+    
+    def skoci(self):
+        if self.smer == 'dol':
+            self.smer = 'gor'
+            
+mojaKroglica = Kroglica('dol', 'modra', 'majhna')
+
+print 'Ravnokar sem ustvaril Kroglico.'
+print 'Moja kroglica je ', mojaKroglica.barva
+print 'Moja kroglica je ', mojaKroglica.velikost
+print 'Smer moje kroglice je ', mojaKroglica.smer
+print 'Sedaj bom kroglico odbil!'
+print
+mojaKroglica.skoci()   
+print 'Zdaj je smer moje kroglice ', mojaKroglica.smer
+</pre>	
+            Če ta program poženete, dobite enak prikaz kot v prejšnjem. Razlika je samo v tem, da drugi primer uporabi metodo <strong>__init__()</strong> za nastavitev atributov.</br>
+            Opazili ste, da se beseda <strong>self</strong> pojavlja na kar nekaj mestih v atributih razreda in definicijah metod. Kaj pomeni <strong>self</strong>? Pri programu lahko uporabimo razred za ustvarjanje več kot ene instance predmeta:
+<pre>mojaKroglica = Kroglicaa('modra', 'majhna', 'dol')
+tvojaKroglica = Kroglica('zelena', 'velika', 'gor')
+</pre>  
+            Ko kličete metodo za eno od teh instanc:
+<pre>tvojaKroglica.skoci()
+</pre>
+            mora metoda vedeti, katera instanca jo je klicala. Mora skočiti <strong>mojaKroglica</strong> ali <strong>tvojaKroglica</strong>? Argument <strong>self</strong> je tisto, kar pove metodi, kateri predmet jo je klical. Temu rečemo <strong>referenca instance (instance reference)</strong>.
+            Ime <strong>self</strong> nima nobenega posebnega pomena v Python-u. Je samo ime, ki ga vsi uporabljajo za referenco instance. <strong>Je še ena od konvencij, ki naredi našo kodo lažjo za branje</strong>. Spremenljivko instance bi lahko poimenovali poljubno, zelo priporočljivo pa je slediti konvenciji in uporabljati besedo self - stvari tako postanejo manj zavajajoče.      
 	        </p>
 			  <script type="text/javascript">
                 

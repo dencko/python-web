@@ -76,7 +76,28 @@
          </div>
 	     <div class="span6">
 			<h3>Ustvarjanje instance predmeta</h3>
-	        <p>
+	        <p>Kot smo prej omenili, definicija razreda ni predmet. Je samo načrt. Če želite ustvariti instanco od Kroglica, naredite to tako:
+<pre>mojaKroglica = Kroglica()
+</pre>
+            Kroglica nima še nobenih atributov, zato jih dodajte nekaj:
+<pre>mojaKroglica.smer = 'dol'
+mojaKroglica.barva = 'modra'
+mojaKroglica.velikost = 'majhna'
+</pre>
+            To je en od načinov za definiranje atributov predmeta. Drugi način boste spoznali v naslednjem odseku. Sedaj poizkusite še eno od metod. Tako bi uporabili metodo <strong>skoci()</strong>:
+<pre>mojaKroglica.skoci()
+</pre>
+            Vse skupaj dajte v program (polje za kodo) z nekaj print stavki, da boste lažje videli, kaj se dogaja:
+<pre>print 'Ravnokar sem ustvaril kroglico!'
+print 'Moja kroglica je ', mojaKroglica.barva
+print 'Moja kroglica je ', mojaKroglica.velikost
+print 'Smer moje kroglice je ', mojaKroglica.smer
+print 'Sedaj bom kroglico odbil!'
+print
+mojaKroglica.skoci()
+print 'Zdaj je smer moje kroglice ', mojaKroglica.smer
+</pre>
+            Ko ste vse zložili v program, kliknite gumb Poženi. Videli boste, kako delujejo predmeti. Opazite lahko, da ko ste klicali metodo <strong>skoci()</strong>,  se je smer kroglice spremenila iz dol v gor. To je točno to, kar mora narediti koda v metodi <strong>skoci()</strong>.
 	        </p>
 			  <script type="text/javascript">
                 
@@ -112,6 +133,11 @@
 <h3>Python koda:</h3>
 <form>
 <textarea id="yourcode" cols="60" rows="10">
+class Kroglica:
+    
+    def skoci(self):
+        if self.smer == 'dol':
+            self.smer = 'gor'
 </textarea></textarea><br/>
 <button class="btn btn-primary" type="button" onclick="runit()">Poženi</button>
 </form>

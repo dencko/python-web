@@ -76,7 +76,17 @@
          </div>
 	     <div class="span6">
 			<h3>Ustvarjanje predmeta</h3>
-	        <p><strong>Predmeti</strong> so način opisovanja delov našega programa kot samo-vsebujoče enote.
+	        <p><strong>Predmeti</strong> so način opisovanja delov našega programa kot samo-vsebujoče enote. So način zbiranja funkcij in podatkov skupaj. To je zelo uporabna ideja v programiranju in se uporablja v veliko programih. Če v bistvu pogledamo pod pokrov Python-a, je skoraj vse predmet. 
+	        V programerskem jeziku rečemo, da je Python <strong>predmetno usmerjen (object oriented)</strong>. Predmeti so način združevanja atributov in metod stvari (kaj poznamo in kaj lahko počnemo). Atributi so informacije, metode pa so dogajanja (actions). Python-ov zapis za uporabo atributov in metod predmeta je tak: <strong>predmet.atribut</strong> ali <strong>predmet.metoda()</strong>. 
+	        Preprosto. Temu se reče <strong>dot notation (zapis s piko)</strong>.</br> Obstajata dva koraka za ustvarjanje predmeta v Python-u. Prvi korak je definiranje, kakšen videz bo imel predmet ter kako se bo obnašal – njegovi atributi in metode. Ustvarjanje tega opisa pa ne ustvari dejansko predmeta. To je samo neke vrste načrt. V Python-u se opis ali načrt imenuje <strong>razred (class)</strong>.
+	        Naslednji primer pokaže definicijo razreda za preprost razred Kroglica:
+<pre>class Kroglica:
+    
+    def skoci(self):
+        if self.smer == 'dol':
+            self.smer = 'gor'
+</pre>
+            Zgoraj imate definicijo razreda za kroglico z eno metodo: <strong>skoci()</strong>. Če kodo poženete, se ne bo prikazalo še nič. Kaj pa atributi? Atributi ne spadajo ravno k razredu, pripadajo vsaki instanci. To je zato, ker ima lahko vsaka instanca različne atribute. Obstaja nekaj načinov, kako lahko nastavimo instanci atribute. Oba načina boste videli v sledečem odseku.
 	        </p>
 			  <script type="text/javascript">
                 

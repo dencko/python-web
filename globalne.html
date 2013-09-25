@@ -76,7 +76,19 @@
          </div>
 	     <div class="span6">
 			<h3>Lokalne in globalne spremenljivke</h3>
-	        <p>
+	        <p>V prejšnjem primeru so bile nekatere spremenljivke uporabljene samo znotraj funkcije. Lahko rečemo, da so <strong>cena</strong>, <strong>skupnaCena</strong> in <strong>stopnja_davka</strong> v obsegu funkcije <code>izracunajCeno()</code>. Za to se uporablja tudi izraz <strong>lokalna (local) spremenljivka</strong>.
+	        Za boljše razumevanje lahko dodate v prejšnji program vrstico, ki prikaže spremenljivko znotraj funkcije:
+<pre>def izracunajCeno(cena, stopnja_davka):
+    skupnaCena = cena + (cena * stopnja_davka)
+    return skupnaCena
+
+moja_cena = 28   
+skupaj = izracunajCeno(moja_cena, 0.22)
+print 'Cena je brez davka je', moja_cena, '|' ' Cena z davkom je ', skupaj
+print cena
+</pre>
+            Če program poženete, se bo izvedel in za zadnjo vrstico javil napako, da ne more najti imena <strong>cena</strong>. Ko nismo znotraj funkcije <code>izracunajCeno()</code>, spremenljivka <strong>cena</strong> ni definirana. Obstaja samo, ko se funkcija izvaja. Ko ste poizkusili prikazati vrednost spremenljivke <strong>cena</strong> izven funkcije (ko ta ni tekla), vam je javilo napako.</br>
+            Kot nasprotje lokalni spremenljivki <strong>cena</strong> sta spremenljivki <strong>moja_cena</strong> in <strong>skupaj</strong> definirani izven funkcije, v glavnem delu programa. Za take spremenljivke uporabljamo besedo <strong>globalne (global)</strong>, ker imajo širši obseg. V tem primeru širše pomeni glavni del programa in ne tisto kar je znotraj funkcije. Če bi program razširili, bi lahko uporabili spremenljivki <strong>moja_cena</strong> in <strong>skupaj</strong> v katerem drugem delu programa in bi še vedno imele vrednosti, ki smo jim jih dodelili. Še vedno bi bile v obsegu. Ker jih lahko uporabimo kjerkoli v programu, jim pravimo <strong>globalne spremenljivke</strong>. 
 	        </p>
 			  <script type="text/javascript">
                 
