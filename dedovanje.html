@@ -14,7 +14,7 @@
 	
 	<div class="page-header" id="header-vadnica">
       <div class="progress">
-        <div class="bar" style="width: 21%;">
+        <div class="bar" style="width: 90%;">
         </div>
       </div>
 	</div>
@@ -41,7 +41,7 @@
               <li class="nav-header">Odločitve</li>
               <li><a href="if_stavek.html">IF stavek</a></li>
               <li><a href="elif.html">ELIF stavek</a></li>
-              <li class="active"><a href="#">AND, OR in NOT</a></li>
+              <li><a href="aon.html">AND, OR in NOT</a></li>
               <li class="nav-header">Seznami</li>
               <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
               <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
@@ -69,45 +69,83 @@
               <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
               <li><a href="init.html">Inicializacija predmeta</a></li>
               <li><a href="polimorfizem.html">Polimorfizem</a></li>
-              <li><a href="dedovanje.html">Dedovanje</a></li>
+              <li class="active"><a href=#">Dedovanje</a></li>
               <li class="nav-header">Moduli</li>
               <li><a href="random.html">Modul Random</a></li>
-              <li><a href="math.html">Modul Math</a></li>
+              <li><a href="math.html">Modul Math</a></li> 
             </ul>
          </div>
 	     <div class="span6">
-			<h3>AND, OR in NOT</h3>
-	        <p>Pogoje lahko združujemo na več načinov. Najpogostejši je ta, da uporabite ključne besede <code>and</code>, <code>or</code> in <code>not</code> ali pa kombinacije le teh.
-	        Ključna beseda <code>and</code> pomeni, da morata biti oba pogoja <strong>true</strong>, če hočete, da se sledeči blok izvrši naprej. Lahko združite tudi več kot dva pogoja.</br>
-	        Ključna beseda <code>or</code> je tudi namenjena združevanju pogojev. Če uporabite besedo <code>or</code>, se sledeči blok izvrši, če je katerikoli od pogojev <strong>true</strong>.</br>
-	        Primeri:</br>
+			<h3>Dedovanje</h3>
+	        <p>Dedovanje je način ponovne uporabe obstoječe kode obstoječih predmetov. Predmet, od katerega se nekaj podeduje, se imenuje <strong>nadrazred</strong> ali po angleško <strong>super type</strong>. Predmet, ki nekaj podeduje, se imenuje <strong>podrazred</strong> ali po angleško <strong>subtype</strong>. Ko ustvarite podrazred določite predmet, ki je tak kot njegov nadrazred, le da ga definirate bolj specifično.
+	        Držati se morate naslednjih načel:
 	        <ul>
-	          <li>AND</li>
-<pre>starost = 12
-razred = 6
-if starost >= 8 and razred >= 3:
-    print "Lahko zapustite sobo."
-else:
-    print "Ne smete zapustiti sobe."
-</pre>
-Poizkusite spreminjati števila pri starosti in razredu, da boste lažje videli, kaj se dogaja.</br></br>
-	          <li>OR</li>
-<pre>barva = "rumena"
-if barva == "rjava" or barva == "modra" or barva == "zelena":
-     print "Zmagali ste."
-else:
-    print "Izgubili ste." 
-</pre>
-Poizkusite namesto "rumena" vpisati eno od barv, ki so navedene v <code>if</code> stavku.</br></br>	          
-	          <li>NOT</li>
-<pre>starost = 12
-if not starost < 8:
-    print "Lahko zapustite sobo."
-else:
-    print "Ne smete zapustiti sobe."
-</pre>
-Poizkusite spreminjati starost, da boste lažje videli, kaj se dogaja.</br></br>	          
+				<li>podrazred nima nikoli manj funkcionalnosti kot nadrazred</li>
+				<li>deodovanje naj ne bi nikoli bilo več kot dva nivoja globoko</li>
 	        </ul>
+            Dedovanje uporabimo, ko se želimo izogniti odvečni kodi. Za primer vzemimo žival. Žival ima več lastnosti, veliko teh lastnosti pa je za različne živali enakih. Če poenostavimo lahko rečemo, da vsaka žival:
+            <ul>
+                <li>ima ime</li>
+                <li>ima tip</li>
+                <li>spi</li>
+                <li>se hrani</li>
+                <li>spušča zvok</li>
+            </ul>
+            V našem nadrazredu lahko definiramo vse te metode, kajti vse živali bodo imele te lastnosti. Če pogledamo podrazred, ni v njem nič takega, kar ne bi imeli tudi v nadrazredu:
+<pre>class Zival(object):
+ 
+    def __init__(self, ime, tip):
+        print "Moje ime je ", ime
+        print "Sem ", tip
+     
+    def oglasanje(self, zvok):
+        print zvok
+         
+    def spanje(self):
+        print "zzzzZZZZzzzzZZZ"
+         
+    def hranjenje(self, hrana):
+        print "Jem ", hrana
+</pre>
+            Sedaj ustvarite novo žival, naprimer tigra. Tiger bo podedoval vse metode nadrazreda <code>Zival</code>. Za dedovanje preprosto vpišemo v izjavi <code>class</code> namesto <code>object</code> med oklepaje <code>Zival</code>. Poglejmo kodo za nov razred:
+<pre>class Tiger(Zival):
+ 
+    def __init__(self, ime):
+        Zival.__init__(self, ime, "Tiger")
+        self.oglasanje("rjovenje")
+ 
+    def zalezuje(self):
+        print "Zalezujem antilopo"
+        self.hranjenje("antilopino meso")
+ 
+sosko = Tiger("Sosko")
+sosko.zalezuje()
+sosko.spanje()
+</pre> 
+            Poglejmo, kako ta stvar deluje. Najprej smo ustvarili razred, ki je podedoval od razreda Zival:
+<pre>class Tiger(Zival):
+</pre>
+            Klicali smo konstruktor v nadrazredu:
+<pre>Zival.__init__(self, ime, "Tiger")
+</pre>
+            Klicali smo konstruktor razreda Tiger, metodo iz nadrazreda (posnema oglašanje tigra)
+<pre>self.oglasanje("rjovenje")
+</pre>
+            Definirali smo metodo, ki je nima nobena druga žival (recimo, da samo tiger zalezuje ostale živali), nato smo klicali metodo <code>hranjenje</code> iz nadrazreda, kjer naš tiger poje antilopino meso:
+<pre>def zalezuje(self):
+    print "Zalezujem antilopo"
+    self.hranjenje("antilopino meso")
+</pre>
+            Ustvarili smo tigra z imenom Sosko:    	
+<pre>sosko = Tiger("Sosko")
+</pre>
+            Ko se je tiger "rodil", smo mu ukazali, naj zalezuje žival (klicali smo metodo <code>zalezuje</code> iz predmeta Tiger):	
+<pre>sosko.zalezuje()
+</pre>
+            Ko se je Sosko najedel, je bil čas za spanje (klicali smo metodo <code>spanje</code> iz nadrazreda).   	
+<pre>sosko.spanje()
+</pre>
+            Tako deluje dedovanje v Python-u.
 	        </p>
 			  <script type="text/javascript">
                 
@@ -176,7 +214,6 @@ Poizkusite spreminjati starost, da boste lažje videli, kaj se dogaja.</br></br>
  
 </body>
 </html>
-
 
 
 

@@ -69,6 +69,7 @@
               <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
               <li><a href="init.html">Inicializacija predmeta</a></li>
               <li class="active"><a href="#">Polimorfizem</a></li>
+              <li><a href="dedovanje.html">Dedovanje</a></li>
               <li class="nav-header">Moduli</li>
               <li><a href="random.html">Modul Random</a></li>
               <li><a href="math.html">Modul Math</a></li>
@@ -76,7 +77,36 @@
          </div>
 	     <div class="span6">
 			<h3>Polimorfizem</h3>
-	        <p>
+	        <p><strong>Polimorfizem</strong> pomeni, da lahko imate dve ali več metod z enakim imenom za različne razrede. Te metode se lahko obnašajo različno, odvisno za kateri razred se uporabljajo. Recimo, da želite izdelati program za geometrijo in potrebujete izračun ploščine za več različnih oblik, kot so naprimer trikotniki in kvadrati. Ustvarite dva razreda:
+<pre>class Trikotnik:
+    
+    def __init__(self, sirina, visina):
+        self.sirina = sirina
+        self.visina = visina
+        
+    def dobiPloscino(self):
+        ploscina = self.sirina * self.visina / 2.0
+        return ploscina
+    
+class Kvadrat:
+    
+    def __init__(self, velikost):
+        self.velikost = velikost
+        
+    def dobiPloscino(self):
+        ploscina = self.velikost ** 2
+        return ploscina
+    
+mojTrikotnik = Trikotnik(4, 5)
+mojKvadrat = Kvadrat(4)
+
+ploscina_trikotnika = mojTrikotnik.dobiPloscino()
+ploscina_kvadrata = mojKvadrat.dobiPloscino()
+
+print ploscina_trikotnika
+print ploscina_kvadrata
+</pre>
+            Za obe obliki ste uporabili enako metodo, pri vsaki pa je metoda naredila nekaj drugega. To je primer <strong>polimorfizma</strong>.
 	        </p>
 			  <script type="text/javascript">
                 
