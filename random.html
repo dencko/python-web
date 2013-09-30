@@ -71,13 +71,39 @@
               <li><a href="polimorfizem.html">Polimorfizem</a></li>
               <li><a href="dedovanje.html">Dedovanje</a></li>
               <li class="nav-header">Moduli</li>
-              <li class="active"><a href="#">Modul Random</a></li>
-              <li><a href="math.html">Modul Math</a></li>
+              <li class="active"><a href="#">Modul random</a></li>
+              <li><a href="math.html">Modul math</a></li>
             </ul>
          </div>
 	     <div class="span6">
-			<h3>Modul Random</h3>
-	        <p><strong>Moduli</strong> so ločene datoteke, ki vsebujejo dele našega programa.
+			<h3>Modul random</h3>
+	        <p><strong>Moduli</strong> so ločene datoteke, ki vsebujejo dele našega programa. Vsak modul je ločena datoteka na vašem disku. Velik program lahko razdelite na več modulov ali pa obratno, več modulov združite v večji program.
+	        Razlogi za uporabo modulov so naslednji:
+	        <ul>
+	          <li>datoteke naredijo manjše, kar vam oljaša iskanje po kodi programa</li>
+	          <li>ko enkrat ustvarite modul, ga lahko uporabljate v več programih. To vam prihrani čas in delo, saj ni več potrebno ponovno ustvarjati fukcij</li>
+	          <li>ni vam potrebno vedno uporabljati vseh modulov skupaj. Uporabite lahko različne kombinacije raznih delov modulov za različne funkcionalnosti programa</li>
+	        </ul>
+	        Če želite uporabiti nekaj, kar je v modulu, morate Python-u povedati, katere module želite uporabiti. Ključna beseda za to je beseda <code>import</code>. Uporabite jo tako:</br>
+<pre>import ime_modula
+</pre>
+            Modul zagotavlja dostop do različnih funkcij, ki podpirajo mnogo operacij. Najbolj pomembna je vsekakor ta, da generira <strong>naključna števila</strong>. Poglejmo si primer programa, ki uporablja modul <strong>random</strong>:
+<pre>from random import randint
+print randint(1, 11)
+</pre>   
+            Iz modula <strong>random</strong> ste klicali funkcijo <code>randint</code>, ji vnesli parametre in jo prikazali. Ko kodo napišete, klikajte na gumb Poženi in opazujte, kaj se dogaja v izpisu! Lahko tudi spreminjate parametre.</br>
+            Poglejmo si še primer, kako lahko naključno generirate vrednost, v tem primeru iz različnih tipov vrednosti, ki so v seznamu. To naredite s pomočjo <code>random.choice()</code>:
+<pre>import random
+mojSeznam = [1, 45, 'Pozdravljen svet!', 'Janko', 'Metka', 3456,]
+print random.choice(mojSeznam)
+</pre>      
+            Vrednosti v seznamu lahko tudi premešate. To naredite s pomočjo funkcije <code>shuffle()</code>:
+<pre>from random import shuffle
+seznam = [[i] for i in range(10)]
+shuffle(seznam)
+print seznam
+</pre>
+            Seznam je tukaj skupina števil od 0 do 9, ki ga s pomočjo funkcije <code>shuffle</code> premešate. Ko napišete kodo, klikajte na gumb Poženi in opazujte dogajanje v izpisu programa. Taki moduli so zelo uporabni pri ustvarjanju programov za igre na srečo.     
 	        </p>
 			  <script type="text/javascript">
                 

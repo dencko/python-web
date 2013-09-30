@@ -71,13 +71,44 @@
               <li><a href="polimorfizem.html">Polimorfizem</a></li>
               <li><a href="dedovanje.html">Dedovanje</a></li>
               <li class="nav-header">Moduli</li>
-              <li><a href="random.html">Modul Random</a></li>
-              <li class="active"><a href="#">Modul Math</a></li>
+              <li><a href="random.html">Modul random</a></li>
+              <li class="active"><a href="#">Modul math</a></li>
             </ul>
          </div>
 	     <div class="span6">
-			<h3>Modul Math</h3>
-	        <p>
+			<h3>Modul math</h3>
+	        <p>Modul math zagotavlja dostop do različnih matematičnih funkcij, definiranih s C standardom. V vsakem primeru vam vrnejo decimalno število, razen če vi določite drugače.
+	        Poglejmo si nekaj funkcij, ki jih najdemo v tem modulu:
+	        <ul>
+				<li>Absolutno število - <strong>abs()</strong></li>
+<pre>import math
+n = -100
+print abs(n)
+</pre>							
+                <li>Zaokroževanje - <strong>round()</strong></li>
+<pre>import math
+n = 1.23456
+print round(n)
+print round(n, 0)
+print round(n, 1)
+print round(n, 2)
+print round(n, 3)
+</pre>		
+            Prvi parameter vzame število, v drugem pa določite, na koliko decimalnih mest naj funkcija <code>round()</code> zaokroži.</br></br>
+	            <li>Tla in strop - <strong>floor()</strong> in <strong>ceil()</strong></li>
+<pre>import math
+n = 100.7
+print math.floor(n)
+print math.ceil(n)
+</pre>    
+	            Funkcija <code>floor()</code> odreže decimalke, funkcija <code>ceil()</code> pa število v vsakem primeru zaokroži navzgor.</br></br>
+	            <li>Seštevek števil - <strong>fsum()</strong></li>
+<pre>import math
+stevila = [1.99, 2.01, 4, 4, 7, 12]
+sestevek = sum(stevila)
+print sestevek
+</pre>
+	        </ul>
 	        </p>
 			  <script type="text/javascript">
                 
