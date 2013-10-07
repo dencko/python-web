@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/oblika.css" rel="stylesheet" media="screen"> 
-  
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 <body>
 	
@@ -26,55 +27,166 @@
 			<a class="btn btn-small" href="#"><i class="icon-info-sign"></i></a>
 		</div>	
 	    <div class="span4">
-	        <ul class="nav nav-list">
-              <li class="nav-header">Uvod</li>
-              <li><a href="uvod.html">Pozdravljen svet!</a></li>
-              <li class="nav-header">Osnovne operacije</li>
-              <li><a href="operacije.html">Računanje</a></li>
-              <li><a href="modulus.html">Ostanek pri deljenju</a></li>
-              <li><a href="operacije2.html">Ostale operacije</a></li>
-              <li class="nav-header">Spremenljivke</li>
-              <li><a href="imena_spremenljivk.html">Imena spremenljivk</a></li>
-              <li><a href="stevila_nizi.html">Števila in nizi znakov</a></li>
-              <li><a href="spreminjanje.html">Spreminjanje spremenljivk</a></li>
-              <li><a href="spreminjanje_podatkov.html">Spreminjanje vrste podatkov</a></li>
-              <li class="nav-header">Odločitve</li>
-              <li><a href="if_stavek.html">IF stavek</a></li>
-              <li><a href="elif.html">ELIF stavek</a></li>
-              <li><a href="aon.html">AND, OR in NOT</a></li>
-              <li class="nav-header">Seznami</li>
-              <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
-              <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
-              <li><a href="postavke.html">Pridobivanje postavk</a></li>
-              <li><a href="rezanje.html">Rezanje seznama</a></li>
-              <li><a href="brisanje.html">Brisanje iz seznama</a></li>
-              <li><a href="iskanje.html">Iskanje po seznamu</a></li>
-              <li><a href="razvrscanje.html">Razvrščanje seznama</a></li>
-              <li><a href="tabele.html">Seznami seznamov - tabele</a></li>
-              <li class="nav-header">Zanke</li>
-              <li><a href="for.html">Števna zanka</a></li>
-              <li><a href="range.html">Funkcija range()</a></li>
-              <li><a href="range1.html">Štetje po korakih</a></li>
-              <li><a href="stetje.html">Štetje brez števil</a></li>
-              <li class="active"><a href="#">Pogojna zanka</a></li>
-              <li class="nav-header">Metode</li>
-              <li><a href="metode_nizi.html">Metode za nize znakov</a></li>
-              <li class="nav-header">Funkcije</li>
-              <li><a href="def_funkcije.html">Definiranje in klicanje funkcije</a></li>
-              <li><a href="argumenti.html">Podajanje argumentov funkciji</a></li>
-              <li><a href="vrednosti.html">Vračanje vrednosti</a></li>
-              <li><a href="globalne.html">Lokalne in globalne spremenljivke</a></li>
-              <li class="nav-header">Predmeti</li>
-              <li><a href="predmet.html">Ustvarjanje predmeta</a></li>
-              <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
-              <li><a href="init.html">Inicializacija predmeta</a></li>
-              <li><a href="polimorfizem.html">Polimorfizem</a></li>
-              <li><a href="dedovanje.html">Dedovanje</a></li>
-              <li class="nav-header">Moduli</li>
-              <li><a href="random.html">Modul random</a></li>
-              <li><a href="math.html">Modul math</a></li>
-            </ul>
-         </div>
+	        <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse1">
+				<i class="icon-plus-sign"></i>
+            UVOD
+            </a>
+            </div>
+                 <div id="collapse1" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="uvod.html">Pozdravljen svet!</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+				<i class="icon-plus-sign"></i>
+            OSNOVNE OPERACIJE
+            </a>
+            </div>
+                 <div id="collapse2" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="operacije.html">Računanje</a></li>
+                 <li><a href="modulus.html">Ostanek pri deljenju</a></li>
+                 <li><a href="operacije2.html">Ostale operacije</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+				<i class="icon-plus-sign"></i>
+            SPREMENLJIVKE
+            </a>
+            </div>
+                 <div id="collapse3" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="imena_spremenljivk.html">Imena spremenljivk</a></li>
+                 <li><a href="stevila_nizi.html">Števila in nizi znakov</a></li>
+                 <li><a href="spreminjanje.html">Spreminjanje spremenljivk</a></li>
+                 <li><a href="spreminjanje_podatkov.html">Spreminjanje vrste podatkov</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
+				<i class="icon-plus-sign"></i>
+            ODLOČITVE
+            </a>
+            </div>
+                 <div id="collapse4" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="if_stavek.html">IF stavek</a></li>
+                 <li><a href="elif.html">ELIF stavek</a></li>
+                 <li><a href="aon.html">AND, OR in NOT</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse5">
+				<i class="icon-plus-sign"></i>
+            SEZNAMI
+            </a>
+            </div>
+                 <div id="collapse5" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
+                 <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
+                 <li><a href="postavke.html">Pridobivanje postavk</a></li>
+                 <li><a href="rezanje.html">Rezanje seznama</a></li>
+                 <li><a href="brisanje.html">Brisanje iz seznama</a></li>
+                 <li><a href="iskanje.html">Iskanje po seznamu</a></li>
+                 <li><a href="razvrscanje.html">Razvrščanje seznama</a></li>
+                 <li><a href="tabele.html">Seznami seznamov - tabele</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse6">
+				<i class="icon-minus-sign"></i>
+            ZANKE
+            </a>
+            </div>
+                 <div id="collapse6" class="accordion-body collapse in">
+                 <div class="accordion-inner">
+                 <li><a href="for.html">Števna zanka</a></li>
+                 <li><a href="range.html">Funkcija range()</a></li>
+                 <li><a href="range1.html">Štetje po korakih</a></li>
+                 <li><a href="stetje.html">Štetje brez števil</a></li>
+                 <li><a href="#">Pogojna zanka</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse7">
+				<i class="icon-plus-sign"></i>
+            METODE
+            </a>
+            </div>
+                 <div id="collapse7" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="metode_nizi.html">Metode za nize znakov</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
+				<i class="icon-plus-sign"></i>
+            FUNKCIJE
+            </a>
+            </div>
+                 <div id="collapse8" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="def_funkcije.html">Definiranje in klicanje funkcije</a></li>
+                 <li><a href="argumenti.html">Podajanje argumentov funkciji</a></li>
+                 <li><a href="vrednosti.html">Vračanje vrednosti</a></li>
+                 <li><a href="globalne.html">Lokalne in globalne spremenljivke</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse9">
+				<i class="icon-plus-sign"></i>
+            PREDMETI
+            </a>
+            </div>
+                 <div id="collapse9" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="predmet.html">Ustvarjanje predmeta</a></li>
+                 <li><a href="instanca.html">Ustvarjanje instance predmeta</a></li>
+                 <li><a href="init.html">Inicializacija predmeta</a></li>
+                 <li><a href="polimorfizem.html">Polimorfizem</a></li>
+                 <li><a href="dedovanje.html">Dedovanje</a></li>
+                 </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+            <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse10">
+				<i class="icon-plus-sign"></i>
+            MODULI
+            </a>
+            </div>
+                 <div id="collapse10" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                 <li><a href="random.html">Modul random</a></li>
+                 <li><a href="math.html">Modul math</a></li>
+                 </div>
+                 </div>
+            </div>
+        </div>
+	</div>
+	
 	     <div class="span6">
 			<h3>Pogojna zanka</h3>
 	        <p>For zanka  je dobra v primeru, ko vnaprej veste, koliko časa boste zanko poganjali. Včasih pa želite, da se zanka izvaja le toliko časa, dokler se nekaj ne zgodi. Ne veste pa, koliko ponavljanj bo do takrat potrebnih. To vam omogoči <strong>while zanka</strong> ali <strong>pogojna zanka (conditional loop)</strong>.
@@ -88,36 +200,6 @@ print "Nasvidenje!"
 </pre>  
             Nastavili ste števec na 0. To pove programu, kje naj začne zanko. Potem ste uporabili ključno besedo <code>while</code> in ustvarili nek pogoj. V našem primeru se prikazujejo števila, ki so manjša od 9. Za vsak prikaz morate spremenljivko <code>stevec</code> povečati za 1. Ko pride do 9, pogoj ni več <strong>true</strong> in program se ustavi.
 	        </p>
-			  <script type="text/javascript">
-                
-                function outf(text) {
-                var mypre = document.getElementById("output");
-                mypre.innerHTML = mypre.innerHTML + text;
-                }
-                function builtinRead(x) {
-                if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
-                throw "File not found: '" + x + "'";
-                return Sk.builtinFiles["files"][x];
-                }
- 
-                function runit() {
-					try {
-                var prog = document.getElementById("yourcode").value;
-                var mypre = document.getElementById("output");
-                mypre.innerHTML = '';
-                Sk.canvas = "mycanvas";
-                Sk.pre = "output";
-                Sk.configure({output:outf, read:builtinRead});
-                eval(Sk.importMainWithBody("<stdin>",false,prog));
-                  }
-                    catch(err) {
-                $("#okno-napaka").modal("show");
-                var y=document.getElementById("napaka");
-                y.innerHTML=err;
-                  }
-             	
-			    }
-              </script>
               
 <h3>Python koda:</h3>
 <form>
@@ -145,14 +227,12 @@ print "Nasvidenje!"
            <button class="btn" data-dismiss="modal" aria-hidden="true">Popravi kodo</button>
          </div>
      </div>
-     
-     
- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    
+
  <script src="js/bootstrap.min.js"></script>
  <script src="js/skulpt.js" type="text/javascript"></script>
  <script src="js/builtin.js" type="text/javascript"></script>
- 
+ <script src="js/vadnica.js" type="text/javascript"></script>
 </body>
 </html>
 

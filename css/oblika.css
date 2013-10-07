@@ -66,12 +66,18 @@ body {
 
 /** Navigacija **/
 
-.nav-list {
-  height:600px;
-  overflow:auto;
+.accordion {
+  list-style:none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.nav-header {
-  font-size:1em;
-  color:grey;
+.accordion-group {
+  background-color:#BAB6B6;
 }
+
+.accordion a {
+  text-decoration:none;
+}
+
