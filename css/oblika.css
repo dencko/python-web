@@ -15,7 +15,7 @@ body {
 }
 
 .hero-unit {
-  height: 200px;
+  height: 150px;
   margin-left:10px;
   margin-right:10px;
   background-image:url('../img/pylogo.png'), url('../img/lined_paper.png');
@@ -26,6 +26,10 @@ body {
 #leva {
   border-top:1px solid black;
   border-bottom:1px solid black;
+}
+
+#desna {
+  height:60px; 
 }
 
 .navbar-fixed-bottom {
@@ -74,10 +78,22 @@ body {
 }
 
 .accordion-group {
-  background-color:#BAB6B6;
+  background-color:#DFDFDF;
+  border:1px solid grey;
+  border-radius:5px;
+  box-shadow:10px 10px 5px #888888;
+}
+
+.accordion-body {
+  background-color:#F0F0F5;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .accordion a {
   text-decoration:none;
 }
-
