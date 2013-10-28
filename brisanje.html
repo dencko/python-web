@@ -51,7 +51,7 @@
                  <div id="collapse2" class="accordion-body collapse">
                  <div class="accordion-inner">
                  <li><a href="operacije.html">Računanje</a></li>
-                 <li><a href="modulus.html">Ostanek pri deljenju</a></li>
+                 <li><a href="modulus.html">Deljenje</a></li>
                  <li><a href="operacije2.html">Ostale operacije</a></li>
                  </div>
                  </div>
@@ -97,10 +97,10 @@
                  <div id="collapse5" class="accordion-body collapse in">
                  <div class="accordion-inner">
                  <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
-                 <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
-                 <li><a href="postavke.html">Pridobivanje postavk</a></li>
+                 <li><a href="dodajanje_sezn.html">Dodajanje elementov v seznam</a></li>
+                 <li><a href="postavke.html">Pridobivanje elementov</a></li>
                  <li><a href="rezanje.html">Rezanje seznama</a></li>
-                 <li><a href="#">Brisanje iz seznama</a></li>
+                 <li><a href="#">Brisanje elementov iz seznama</a></li>
                  <li><a href="iskanje.html">Iskanje po seznamu</a></li>
                  <li><a href="razvrscanje.html">Razvrščanje seznama</a></li>
                  <li><a href="tabele.html">Seznami seznamov - tabele</a></li>
@@ -188,11 +188,11 @@
 	</div>
 	
 	     <div class="span6">
-			<h3>Brisanje iz seznama</h3>
-	        <p>Stvari lahko iz seznama izbrišete na 3 načine, in sicer s pomočjo metod <strong>remove()</strong>, <strong>pop()</strong> in ključne besede <strong>del</strong>.</br>
-	        Metoda <strong>remove()</strong> zbriše postavko, ki si jo izberete na seznamu ter jo vrže stran. Primer: <code>crke.remove('e')</code> Vedeti morate samo to, ali postavka obstaja ali ne obstaja na seznamu. Če želite zbrisati nekaj, kar ni na seznamu, vam javi napako. Preizkusite metodo in nato izpišite seznam s pomočjo ključne besede <code>print</code></br>
-            Metoda <strong>pop()</strong> pobere zadnjo postavko iz seznama in vam jo vrne. To pomeni, da jo lahko date v spremenljivko (ji dodelite ime). Primer: <code>zadnja_crka = crke.pop()</code>. V oklepaj te metode lahko napišemo številko, ki pomeni indeks postavke. Primer: <code>nova_crka = crke.pop(1)</code> odstrani postavko z indeksom 1 (v našem primeru črko b). Preizkusite metodo in nato s pomočjo ključne besede <code>print</code> prikažite seznam in spremenljivki <code>zadnja_crka</code> in <code>nova_crka</code>.</br>
-            Ključna beseda <strong>del</strong> nam zbriše postavko iz seznama z uporabo indeksa postavke. Primer: <code>del crke[2]</code> zbriše črko c iz seznama. Preizkusite in nato prikažite seznam s pomočjo ključne besede <code>print</code>.  
+			<h3>Brisanje elementov iz seznama</h3>
+	        <p>Elemente lahko iz seznama izbrišete na 3 načine, in sicer s pomočjo metod <strong>remove()</strong>, <strong>pop()</strong> in ključne besede <strong>del</strong>.</br>
+	        Metoda <strong>remove()</strong> zbriše element, ki si ga izberete na seznamu in ga vrže stran. Primer: <code>crke.remove('e')</code> Vedeti morate samo to, ali element obstaja ali ne obstaja na seznamu. Če želite zbrisati nekaj, kar ni na seznamu, vam javi napako. Preizkusite metodo in nato izpišite seznam s pomočjo ključne besede <code>print</code></br>
+            Metoda <strong>pop()</strong> pobere zadnji element iz seznama in vam ga vrne. To pomeni, da ga lahko shranite v spremenljivko (ji dodelite ime). Primer: <code>zadnja_crka = crke.pop()</code>. V oklepaj te metode lahko napišemo številko, ki pomeni indeks elementa. Primer: <code>nova_crka = crke.pop(1)</code> odstrani element z indeksom 1 (v našem primeru črko b). Preizkusite metodo in nato s pomočjo ključne besede <code>print</code> prikažite seznam in spremenljivki <code>zadnja_crka</code> in <code>nova_crka</code>.</br>
+            Ključna beseda <strong>del</strong> vam zbriše element iz seznama z uporabo indeksa elementa. Primer: <code>del crke[2]</code> zbriše črko c iz seznama. Preizkusite in nato prikažite seznam s pomočjo ključne besede <code>print</code>.  
 	        </p>
 
               
@@ -220,7 +220,7 @@ crke = ['a', 'b', 'c', 'd', 'e']
            <p>Popravite kodo in poizkusite znova.</p>
            </div>
          <div class="modal-footer">
-           <button class="btn" data-dismiss="modal" aria-hidden="true">Popravi kodo</button>
+           <button class="btn" data-dismiss="modal" aria-hidden="true">Poskusi še enkrat</button>
          </div>
      </div>
        

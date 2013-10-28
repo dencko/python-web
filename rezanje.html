@@ -51,7 +51,7 @@
                  <div id="collapse2" class="accordion-body collapse">
                  <div class="accordion-inner">
                  <li><a href="operacije.html">Računanje</a></li>
-                 <li><a href="modulus.html">Ostanek pri deljenju</a></li>
+                 <li><a href="modulus.html">Deljenje</a></li>
                  <li><a href="operacije2.html">Ostale operacije</a></li>
                  </div>
                  </div>
@@ -97,10 +97,10 @@
                  <div id="collapse5" class="accordion-body collapse in">
                  <div class="accordion-inner">
                  <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
-                 <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
-                 <li><a href="postavke.html">Pridobivanje postavk</a></li>
-                 <li><a href="#">Rezanje seznama</a></li>
-                 <li><a href="brisanje.html">Brisanje iz seznama</a></li>
+                 <li><a href="dodajanje_sezn.html">Dodajanje elementov v seznam</a></li>
+                 <li><a href="postavke.html">Pridobivanje elementov</a></li>
+                 <li><a href="">Rezanje seznama</a></li>
+                 <li><a href="brisanje.html">Brisanje elementov iz seznama</a></li>
                  <li><a href="iskanje.html">Iskanje po seznamu</a></li>
                  <li><a href="razvrscanje.html">Razvrščanje seznama</a></li>
                  <li><a href="tabele.html">Seznami seznamov - tabele</a></li>
@@ -189,12 +189,12 @@
 	
 	     <div class="span6">
 			<h3>Rezanje seznama</h3>
-	        <p>Indekse lahko uporabite tudi za hkratno pridobivanje več kot ene postavke iz seznama. Temu rečemo <strong>rezanje</strong> seznama.
+	        <p>Indekse lahko uporabite tudi za hkratno pridobivanje več kot enega elementa iz seznama. Temu rečemo <strong>rezanje</strong> seznama.
 	        Kar dobite vrnjeno pri rezanju seznama je običajno drug (manjši) seznam. Manjšemu seznamu pravimo tudi rezina originalnega seznama. Originalni seznam pri rezanju ostane nespremenjen. 
-	        Rezina je delna kopija originala. Razliko lahko vidite, če primerjate pridobivanje postavke in rezanje seznama. Poizkusite z ukazoma <code>print crke[1]</code> in <code>print crke[1:2]</code>.
-	        Poglejte razliko v izpisu. V prvem primeru ste dobili nazaj postavko. V drugem primeru ste dobili nazaj seznam, ki vsebuje postavko. Razlika je subtilna, vendar jo morate poznati. 
-	        V prvem primeru ste uporabili en sam indeks za pridobitev postavke iz seznama. V drugem primeru ste uporabili zapis za rezanje, da ste iz seznama pridobili rezino z eno postavko.</br>
-	        Pri rezanju seznama obstajajo tudi bližnjice. Če želite, da rezina vključuje začetek seznama, je bližnjica za to uporaba dvopičja, ki mu sledi število postavk, ki jih želite. 
+	        Rezina je delna kopija originala. Razliko lahko vidite, če primerjate pridobivanje elementa in rezanje seznama. Poizkusite z ukazoma <code>print crke[1]</code> in <code>print crke[1:2]</code>.
+	        Poglejte razliko v izpisu. V prvem primeru ste dobili vrnjen element. V drugem primeru ste dobili vrnjen seznam, ki vsebuje element. Razlika je subtilna, vendar jo morate poznati. 
+	        V prvem primeru ste uporabili en sam indeks za pridobitev elementa iz seznama. V drugem primeru ste uporabili zapis za rezanje, da ste iz seznama pridobili rezino z enim elementom.</br>
+	        Pri rezanju seznama obstajajo tudi bližnjice. Če želite, da rezina vključuje začetek seznama, je bližnjica za to uporaba dvopičja, ki mu sledi število elementov, ki jih želite. 
 	        To storite z ukazom <code>print crke[:2]</code>. Ta ukaz ustvari rezino od začetka seznam do določenega indeksa (indeks v seznam <strong>NI</strong> vključen!). Preverite še, kaj naredita ukaza <code>print crke[2:]</code> 
 	        in <code>print [:]</code>. Prvi ustvari rezino od določenega indeksa do konca seznama, drugi pa ustvari kopijo seznama (uporabno, če želite kaj spremeniti v seznamu in pri tem pustiti originalen seznam nedotaknjen). 
 	        </p>
@@ -223,7 +223,7 @@ crke = ['a', 'b', 'c', 'd', 'e']
            <p>Popravite kodo in poizkusite znova.</p>
            </div>
          <div class="modal-footer">
-           <button class="btn" data-dismiss="modal" aria-hidden="true">Popravi kodo</button>
+           <button class="btn" data-dismiss="modal" aria-hidden="true">Poskusi še enkrat</button>
          </div>
      </div>
         

@@ -51,7 +51,7 @@
                  <div id="collapse2" class="accordion-body collapse">
                  <div class="accordion-inner">
                  <li><a href="operacije.html">Računanje</a></li>
-                 <li><a href="modulus.html">Ostanek pri deljenju</a></li>
+                 <li><a href="modulus.html">Deljenje</a></li>
                  <li><a href="operacije2.html">Ostale operacije</a></li>
                  </div>
                  </div>
@@ -97,10 +97,10 @@
                  <div id="collapse5" class="accordion-body collapse">
                  <div class="accordion-inner">
                  <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
-                 <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
-                 <li><a href="postavke.html">Pridobivanje postavk</a></li>
+                 <li><a href="dodajanje_sezn.html">Dodajanje elementov v seznam</a></li>
+                 <li><a href="postavke.html">Pridobivanje elementov</a></li>
                  <li><a href="rezanje.html">Rezanje seznama</a></li>
-                 <li><a href="brisanje.html">Brisanje iz seznama</a></li>
+                 <li><a href="brisanje.html">Brisanje elementov iz seznama</a></li>
                  <li><a href="iskanje.html">Iskanje po seznamu</a></li>
                  <li><a href="razvrscanje.html">Razvrščanje seznama</a></li>
                  <li><a href="tabele.html">Seznami seznamov - tabele</a></li>
@@ -212,13 +212,13 @@ else:
 </pre>
 Poizkusite namesto "rumena" vpisati eno od barv, ki so navedene v <code>if</code> stavku.</br></br>	          
 	          <li>NOT</li>
-<pre>starost = 12
-if not starost < 8:
-    print "Lahko zapustite sobo."
-else:
-    print "Ne smete zapustiti sobe."
+	          <p>Pri tem primeru se boste prvič srečali s seznami. Ključno besedo <code>NOT</code> lahko uporabite na sledeč način:</p>
+<pre>seznam = ["a", "b", "c", "d", "e"]
+if "h" not in seznam:
+    seznam.append("h")
+print seznam
 </pre>
-Poizkusite spreminjati starost, da boste lažje videli, kaj se dogaja.</br></br>	          
+Ta program preveri, če seznam vsebuje element <strong>h</strong>. Če elementa ne najde, ga s pomočjo kode <code>seznam.append()</code> doda v seznam. Več o seznamih boste izvedeli v naslednjih vajah.</br></br>	          
 	        </ul>
 	        </p>
 
@@ -246,7 +246,7 @@ Poizkusite spreminjati starost, da boste lažje videli, kaj se dogaja.</br></br>
            <p>Popravite kodo in poizkusite znova.</p>
            </div>
          <div class="modal-footer">
-           <button class="btn" data-dismiss="modal" aria-hidden="true">Popravi kodo</button>
+           <button class="btn" data-dismiss="modal" aria-hidden="true">Poskusi še enkrat</button>
          </div>
      </div>
          

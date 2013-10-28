@@ -51,7 +51,7 @@
                  <div id="collapse2" class="accordion-body collapse">
                  <div class="accordion-inner">
                  <li><a href="operacije.html">Računanje</a></li>
-                 <li><a href="modulus.html">Ostanek pri deljenju</a></li>
+                 <li><a href="modulus.html">Deljenje</a></li>
                  <li><a href="operacije2.html">Ostale operacije</a></li>
                  </div>
                  </div>
@@ -97,10 +97,10 @@
                  <div id="collapse5" class="accordion-body collapse in">
                  <div class="accordion-inner">
                  <li><a href="ustv_sezn.html">Ustvarjanje seznama</a></li>
-                 <li><a href="dodajanje_sezn.html">Dodajanje stvari v seznam</a></li>
-                 <li><a href="postavke.html">Pridobivanje postavk</a></li>
+                 <li><a href="dodajanje_sezn.html">Dodajanje elementov v seznam</a></li>
+                 <li><a href="postavke.html">Pridobivanje elementov</a></li>
                  <li><a href="rezanje.html">Rezanje seznama</a></li>
-                 <li><a href="brisanje.html">Brisanje iz seznama</a></li>
+                 <li><a href="brisanje.html">Brisanje elementov iz seznama</a></li>
                  <li><a href="iskanje.html">Iskanje po seznamu</a></li>
                  <li><a href="#">Razvrščanje seznama</a></li>
                  <li><a href="tabele.html">Seznami seznamov - tabele</a></li>
@@ -189,14 +189,14 @@
 	
 	     <div class="span6">
 			<h3>Razvrščanje seznama</h3>
-	        <p>Seznami so urejen tip zbirke. To pomeni, da imajo postavke v seznamu nek red in vsaka izmed njih ima določeno lokacijo v seznamu – indeks. Ko enkrat date postavke v seznam v nekem določenem redu, tako tudi ostane. 
+	        <p>Seznami so urejen tip zbirke. To pomeni, da imajo elementi v seznamu nek red in vsak izmed njih ima določeno lokacijo v seznamu – indeks. Ko enkrat shranite elemente v seznam v nekem določenem redu, tako tudi ostane. 
 	        Mogoče želite razvrščen seznam, preden ga uporabite. Za razvrščanje seznama uporabite metodo <code>sort()</code>.
 	        Metoda <code>sort()</code> avtomatsko razvrsti nize znakov po abecednem vrstnem redu in števila po velikosti – od najmanjšega proti največjemu. Pomembno je vedeti, da metoda <code>sort()</code> spreminja seznam na licu mesta. To pomeni, da spremeni originalen seznam in ne ustvari novega, razvrščenega seznama. V tem primeru ne morete zapisati <code>print crke.sort()</code>, ampak to naredite tako:
 <pre>crke = ['d', 'a', 'e', 'c', 'b']
 crke.sort()
 print crke
 </pre>
-	        Sezname lahko razvrščate tudi v obratnem vrstnem redu. Ta lahko naredite na dva načina. En je ta, da razvrstite seznam in ga nato obrnete s pomočjo metode <code>reverse()</code>, ki obrne vrstni red postavk na seznamu. Primer:
+	        Sezname lahko razvrščate tudi v obratnem vrstnem redu. Ta lahko naredite na dva načina. En je ta, da razvrstite seznam in ga nato obrnete s pomočjo metode <code>reverse()</code>, ki obrne vrstni red elementov v seznamu. Primer:
 <pre>crke = ['d', 'a', 'e', 'c', 'b']
 crke.sort()
 print crke
@@ -211,7 +211,7 @@ nov = sorted(crke)
 print crke
 print nov
 </pre>  
-            Funkcija <code>sorted()</code> nam da razvrščeno kopijo originalnega seznama. 
+            Funkcija <code>sorted()</code> vam vrne razvrščeno kopijo originalnega seznama. 
 	        </p>
               
 <h3>Python koda:</h3>
@@ -238,7 +238,7 @@ crke = ['d', 'a', 'e', 'c', 'b']
            <p>Popravite kodo in poizkusite znova.</p>
            </div>
          <div class="modal-footer">
-           <button class="btn" data-dismiss="modal" aria-hidden="true">Popravi kodo</button>
+           <button class="btn" data-dismiss="modal" aria-hidden="true">Poskusi še enkrat</button>
          </div>
      </div>
          
